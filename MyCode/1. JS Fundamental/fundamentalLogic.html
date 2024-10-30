@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Logika Pemrograman - JavaScript</title>
+    <style>
+      /* Umum */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      h1,
+      h2 {
+        color: #333;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin: 20px 0;
+      }
+
+      p {
+        font-size: 1em;
+        color: #555;
+        text-align: center;
+        display: none; /* Awalnya tersembunyi */
+      }
+
+      /* Container */
+      .container {
+        max-width: 700px;
+        width: 100%;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Input dan Tombol */
+      input[type="number"],
+      input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #fafafa;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #000000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s;
+        margin: 10px 0;
+        width: 100%;
+      }
+
+      button:hover {
+        background-color: #292d31;
+      }
+
+      /* Hasil */
+      p {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        color: #007bff;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Latihan Logika Pemrograman JavaScript</h1>
+
+      <!-- Soal 1: Ganjil Genap -->
+      <h2>Soal 1: Cek Ganjil atau Genap</h2>
+      <input type="number" id="inputGanjilGenap" placeholder="Masukkan angka" />
+      <button onclick="cekGanjilGenap()">Cek</button>
+      <p id="hasilGanjilGenap"></p>
+
+      <!-- Soal 2: Balik Kata -->
+      <h2>Soal 2: Balik Kata</h2>
+      <input type="text" id="inputBalikKata" placeholder="Masukkan kata" />
+      <button onclick="balikKata()">Balikkan</button>
+      <p id="hasilBalikKata"></p>
+
+      <!-- Soal 3: Faktorial -->
+      <h2>Soal 3: Hitung Faktorial</h2>
+      <input type="number" id="inputFaktorial" placeholder="Masukkan angka" />
+      <button onclick="hitungFaktorial()">Hitung</button>
+      <p id="hasilFaktorial"></p>
+
+      <!-- Soal 4: Bilangan Prima -->
+      <h2>Soal 4: Cek Bilangan Prima</h2>
+      <input type="number" id="inputPrima" placeholder="Masukkan angka" />
+      <button onclick="cekPrima()">Cek</button>
+      <p id="hasilPrima"></p>
+
+      <!-- Soal 5: FizzBuzz -->
+      <h2>Soal 5: FizzBuzz</h2>
+      <input type="number" id="inputFizzBuzz" placeholder="Masukkan angka" />
+      <button onclick="fizzBuzz()">Cek</button>
+      <p id="hasilFizzBuzz"></p>
+    </div>
+
+    <script>
+      // Fungsi untuk menampilkan hasil setelah tombol diklik
+      function tampilkanHasil(id) {
+        document.getElementById(id).style.display = "block";
+      }
+
+      // Soal 1: Ganjil atau Genap
+      function cekGanjilGenap() {
+        let angka = document.getElementById("inputGanjilGenap").value;
+        let hasil = angka % 2 === 0 ? "Genap" : "Ganjil";
+        document.getElementById("hasilGanjilGenap").innerText =
+          "Hasil: " + hasil;
+        tampilkanHasil("hasilGanjilGenap");
+      }
+
+      // Soal 2: Balik Kata
+      function balikKata() {
+        let kata = document.getElementById("inputBalikKata").value;
+        let hasil = kata.split("").reverse().join("");
+        document.getElementById("hasilBalikKata").innerText = "Hasil: " + hasil;
+        tampilkanHasil("hasilBalikKata");
+      }
+
+      // Soal 3: Faktorial
+      function hitungFaktorial() {
+        let angka = parseInt(document.getElementById("inputFaktorial").value);
+        let faktorial = 1;
+        for (let i = 1; i <= angka; i++) {
+          faktorial *= i;
+        }
+        document.getElementById("hasilFaktorial").innerText =
+          "Hasil: " + faktorial;
+        tampilkanHasil("hasilFaktorial");
+      }
+
+      // Soal 4: Bilangan Prima
+      function cekPrima() {
+        let angka = parseInt(document.getElementById("inputPrima").value);
+        let prima = true;
+        if (angka <= 1) {
+          prima = false;
+        } else {
+          for (let i = 2; i < angka; i++) {
+            if (angka % i === 0) {
+              prima = false;
+              break;
+            }
+          }
+        }
+        document.getElementById("hasilPrima").innerText =
+          "Hasil: " + (prima ? "Prima" : "Bukan Prima");
+        tampilkanHasil("hasilPrima");
+      }
+
+      // Soal 5: FizzBuzz
+      function fizzBuzz() {
+        let angka = parseInt(document.getElementById("inputFizzBuzz").value);
+        let hasil = "";
+        if (angka % 3 === 0 && angka % 5 === 0) {
+          hasil = "FizzBuzz";
+        } else if (angka % 3 === 0) {
+          hasil = "Fizz";
+        } else if (angka % 5 === 0) {
+          hasil = "Buzz";
+        } else {
+          hasil = angka;
+        }
+        document.getElementById("hasilFizzBuzz").innerText = "Hasil: " + hasil;
+        tampilkanHasil("hasilFizzBuzz");
+      }
+    </script>
+  </body>
+</html>

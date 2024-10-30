@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- media -->
+    <h2>Media</h2>
+    <h3>Gambar</h3>
+    <img
+      src="https://www.telkomsel.com/shops/assets/images/input-number.png"
+      alt="banner mandiri"
+      height="200"
+      width="200"
+    />
+
+    <h3>Video</h3>
+    <video
+      width="400"
+      src="https://videos.pexels.com/video-files/2278095/2278095-hd_1920_1080_30fps.mp4"
+      controls
+    ></video>
+
+    <h3>Audio</h3>
+    <!-- <audio controls src="./audio1.mp3"></audio> -->
+
+    <h3>Iframe</h3>
+    <iframe
+      width="500"
+      height="315"
+      src="https://www.youtube.com/embed/HQwLPhE2zys?si=BsxJRPinM2ufiHDj"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <!-- lists -->
+    <h3>Lists</h3>
+
+    <h3>Ordered list</h3>
+    <p>ranking siswa</p>
+    <ol type="1">
+      <li>adi</li>
+      <li>budi</li>
+    </ol>
+
+    <h3>Unordered Lists</h3>
+    <p>nama buah</p>
+    <ul type="square">
+      <li>anggur</li>
+      <li>
+        buah manis:
+        <ul type="disc">
+          <li>semangka</li>
+          <li>melon</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- table -->
+    <h3>Table</h3>
+    <p>data siswa</p>
+    <table
+      style="border: 1px solid green; border-collapse: collapse; width: 100%"
+    >
+      <thead>
+        <th style="border: 1px solid green">Nama</th>
+        <th style="border: 1px solid green">Nomor</th>
+        <th style="border: 1px solid green">Alamat</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="border: 1px solid green">budi</td>
+          <td style="border: 1px solid green">0123</td>
+          <td style="border: 1px solid green">alamat 1</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid green">putri</td>
+          <td style="border: 1px solid green">0456</td>
+          <td style="border: 1px solid green">alamat 2</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid green">putra</td>
+          <td style="border: 1px solid green">0986</td>
+          <td style="border: 1px solid green">alamat 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+    Requirement:
+    buatlah table dengan data 
+    nama, description dan gambar.
+
+    nama: hewan
+    description: masukan hewan mamalia dan bertelur
+    image: gambar salah satu hewan 
+
+    nama: kota di jawa timur
+    description: list kota dan kabupaten
+    image: icon jawa timu
+
+    dan kasih input htmlnya untuk masing masing data
+    -->
+    <h3>Challange</h3>
+    <form style="border: 1px solid black; margin: 20px 1px; padding: 20px">
+      <h3>Form Input Data</h3>
+      <p>Masukkan Nama</p>
+      <input type="text" placeholder="Nama Data" />
+      <p>Masukkan Deskripsi</p>
+      <textarea name="deskripsi" id="" cols="30" rows="10"></textarea>
+      <p>Masukkan Gambar</p>
+      <input type="file" /> <br />
+      <button type="submit" style="margin-top: 30px">submit</button>
+    </form>
+    <table
+      border="1"
+      style="border-collapse: collapse; border-color: green"
+      width="100%"
+      cellpadding="10"
+    >
+      <thead style="background-color: #d3d3d3">
+        <tr align="center">
+          <th>Nama</th>
+          <th>Description</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: center">Hewan</td>
+          <td>
+            <strong>Hewan Mamalia:</strong>
+            <ul type="disc">
+              <li>Kucing</li>
+              <li>Anjing</li>
+            </ul>
+            <strong>Hewan Bertelur:</strong>
+            <ul type="circle">
+              <li>Ayam</li>
+              <li>Bebek</li>
+            </ul>
+          </td>
+          <td align="center">
+            <img
+              src="https://png.pngtree.com/png-vector/20240123/ourlarge/pngtree-orange-cat-cute-little-kitty-png-image_11458193.png"
+              alt="Kucing"
+              width="150"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center">Kota di Jawa Timur</td>
+          <td>
+            <strong>Kota:</strong>
+            <ul type="disc">
+              <li>Surabaya</li>
+              <li>Malang</li>
+            </ul>
+            <strong>Kabupaten:</strong>
+            <ul type="disc">
+              <li>Sidoarjo</li>
+              <li>Gresik</li>
+            </ul>
+          </td>
+          <td align="center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/74/Coat_of_arms_of_East_Java.svg"
+              alt="Logo Jawa Timur"
+              width="150"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- form -->
+    <h2>Form</h2>
+    <h3>Input</h3>
+    <div>
+      <form action="">
+        <!-- text -->
+        <input type="text" placeholder="masukkan username" />
+        <!-- number -->
+        <input type="number" placeholder="masukkan nomor" />
+        <!-- email -->
+        <input type="email" placeholder="masukkan email" />
+        <!-- password -->
+        <input type="password" placeholder="masukkan password" />
+        <!-- date -->
+        <input type="date" name="date" id="" />
+        <!-- file -->
+        <input type="file" />
+        <!-- radio -->
+        <p>gender</p>
+        <label> <input type="radio" name="gender" value="male" />male </label>
+        <label>
+          <input type="radio" name="gender" value="female" />female
+        </label>
+        <!-- checknox -->
+        <p>type</p>
+        <label>
+          <input type="checkbox" name="gender" value="type1" />type 1
+        </label>
+        <label>
+          <input type="checkbox" name="gender" value="type2" />type 2
+        </label>
+        <!-- dropdown -->
+        <label>
+          <p>golongan darah</p>
+          <select>
+            <option value="o">O</option>
+            <option value="ab">AB</option>
+            <option value="a">A</option>
+          </select>
+        </label>
+        <!-- text area -->
+        <p>masukkan comment</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </form>
+    </div>
+  </body>
+</html>

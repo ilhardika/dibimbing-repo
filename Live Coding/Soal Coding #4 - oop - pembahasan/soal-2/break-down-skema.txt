@@ -1,0 +1,36 @@
+Class Pegawai
+Property:
++ idPegawai
++ nama
++ golongan
++ tglLahir
+Method:
++ gajiPokok()
+    -> if if ...
++ tunjanganPegawai()
+    -> return 0;
++ totalGaji()
+    -> this.gajiPokok() + this.tunjanganPegawai()
+
+------------------------------------------------
+
+Class Dosen extends Pegawai
+Property:
++ NIDN
+Method:
++ tunjanganPegawai() (ada keterangan @override)
+    -> return 1.500.000;
++ tunjanganFungsional()
+    -> return getUsia() < 40 ? 1.700.000 : 2.000.000;
++ totalGaji()
+    -> pokok + tunjanganPegawai + tunjanganFungsional
+
+--------------------------------------------
+
+Class NonDosen extends Pegawai
+Property: (-)
+Method:
++ tunjanganPegawai() (ada keterangan @override)
+    -> return 1.000.000;
++ totalGaji()
+    -> pokok + tunjanganPegawai

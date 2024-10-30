@@ -1,0 +1,35 @@
+class Pegawai
+--property
++ id pegawai
++ nama Pegawai
++ golongan
++ tanggal lahir
+
+--method
+hitungGajiPokok()
+    if(golongan 1 && umur < 40) => 3.500.000
+    if(golongan 1 && umur > 40) => 4.500.000
+    if(golongan 2 && umur < 40) => 5.000.000
+    if(golongan 2 && umur > 40) => 6.000.000
+
+
+class Dosen
+--property
+super(id,nama,golongan,tanggallahir)
++ NIDN
+--method
+hitunganTunjanganPegawai()
+    return 1.500.000
+hitunganTunjanganFungsional()
+    if(umur < 40) => 1.700.000
+    if(umur > 40) => 2.000.000
+totalGaji()
+    return this.hitungGajiPokok() + this.hitunganTunjanganPegawai() + this.hitunganTunjanganFungsional()
+
+class Non Dosen 
+--property
+super(id,nama,golongan,tanggallahir)
+hitunganTunjanganPegawai()
+    return 1.000.000
+totalGaji()
+    return this.hitungGajiPokok() + this.hitunganTunjanganPegawai()

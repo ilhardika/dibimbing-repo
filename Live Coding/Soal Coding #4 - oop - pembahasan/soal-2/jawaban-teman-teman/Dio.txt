@@ -1,0 +1,31 @@
+Class pegawai
+-----property-----
+id pegawai
+nama pegawai
+golongan(integer)
+tanggal lahir
+NIDN (class dosen)
+------method------
+method 1
+menghitug gaji pegawai dengan dan digolongkan umurnya
+cara untuk mengetahui umur ialah tanggal hari ini dikurang dengan tanggal lahir
+
+golongan 1 berusia < 40 tahun: 3.500.000
+golongan 1 berusia > 40 tahun: 4.500.000
+golongan 2 berusia < 40 tahun: 5.000.000
+golongan 2 berusia > 40 tahun: 6.000.000
+
+method 2 (class dosen)
+setiap pegawai akan diberikan tunjangan yang besarannya dibedakan antara dosen dan nondosen
+Dosen: 1.500.000
+nonDosen: 1.000.000
+
+method 3 (class dosen)
+Khusus Dosen terdapat tunjangan fungsional yang besarannya tergantung dengan usia,yaitu
+dosen dengan usia < 40 tahun: 1.700.000
+dosen dengan usia > 40 tahun: 2.000.000
+
+method 4 
+menghitung total gaji yang ditetrima oleh setiap pegawai
+Dosen: Total Gaji = Gaji Pokok+Tunjangan Pegawai+Tunjangan Fungsional
+NonDosen: Total Gaji = Gaji Pokok+Tunjangan Pegawai

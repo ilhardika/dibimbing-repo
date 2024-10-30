@@ -1,0 +1,52 @@
+class pegawai
+--- property ---
++ idPegawai = string
++ namaPegawai = string
++ golongan = integer (1,2)
++ tanggalLahir = date
++ usia = integer (tanggalSekarang - tanggalLahir)
+--- method ---
+gajiPokok() = {
+  if (golongan === 1) => {
+    if (usia < 40){
+      gaji = 3.500.000
+    }    
+    if (usia >= 40){
+      gaji = 4.500.000
+    }    
+  }
+}
+  if (golongan === 2) => {
+    if (usia < 40){
+      gaji = 5.000.000
+      }    
+    if (usia >= 40){
+      gaji = 6.000.000
+      }    
+  }
+}
+
+
+class Dosen extends pegawai
+--- property ---
++ super() = semua property pegawai
++ NIDN = integer
+--- method ---
+tunjanganDosen() => {tunjangan = 1.500.000}
+tunjanganFungsional() => {
+    if (usia > 40){
+      tunjangan += 1.700.000
+    }    
+    if (usia >= 40){
+      tunjangan += 2.000.000
+    }   
+}
+totalGaji => pokok + tunj + tunj Fungsional
+
+
+class nonDosen extends pegawai
+--- property ---
++ super() = semua property pegawai
+--- method ---
+tunjanganNonDosen() => {tunjangan = 1.000.000}
+totalGaji => pokok + tunj

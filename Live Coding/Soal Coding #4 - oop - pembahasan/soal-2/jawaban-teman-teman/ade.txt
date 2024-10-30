@@ -1,0 +1,38 @@
+class Pegawai
+---properti---
+idPegawai 
+namaPegawai
+golongan
+tanggalLahir
+
+---method---
+gajiPokok
+golongan 1 < 40 tahun => 3.500.000
+golongan 1 > 40 tahun => 4.500.000
+golongan 2 < 40 tahun => 5.000.000
+golongan 2 > 40 tahun => 6.000.000
+
+---method---
+tunjanganPegawai => 1.000.000
+
+---method---
+komponenGaji
+gajiPokok+tunjanganPegawai
+
+----------------------------------------------------------------------
+
+class Dosen extends Pegawai
+---properti tambahan---
+NIDN
+
+---method---
+tunjanganPegawai => 1.500.000
+
+---method---
+tunjanganFungsional
+dosen < 40 => 1.700.000
+dosen > 40 => 2.000.000
+
+---method---
+komponenGaji
+gajiPokok+tunjanganPegawai+tunjanganFungsional

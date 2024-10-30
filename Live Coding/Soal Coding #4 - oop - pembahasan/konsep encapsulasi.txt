@@ -1,0 +1,23 @@
+
+class
+
+- variable_1 (private)
+- variable_2 (private)
+
+- method_1 -> public (nama lain dari function)
+- method_2 -> public
+   -> proses 1
+   -> proses 2
+   -> proses 3
+   -> return hasilnya
+
+- getVariable1 -> public
+    return variable_1
+
+- method_proses_1 -> private
+- method_proses_2 -> private
+- method_proses_3 -> private
+
+
+
+ada object atau proses, di luar dari class itu, dia ga bisa akses variablenya

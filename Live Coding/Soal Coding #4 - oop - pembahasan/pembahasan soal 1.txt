@@ -1,0 +1,16 @@
+
+Class Manusia
+--- property ---
++ tinggi
+--- method ---
++ getTB()
+
+
+Class LakiLaki extends Manusia
+--- method/function/proses/cara ---
++ getBBI() -> ada dikali 10%
+
+
+Class Perempuan extends Manusia
+--- method ---
++ getBBI() -> ada dikali 15%
