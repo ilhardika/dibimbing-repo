@@ -20,16 +20,16 @@
 
 // console.log(penjumlahan(2, 2));
 
-// // type object
-// type User = {
-//   name: string;
-//   age: number;
-//   isActive: true;
-// };
+// type object
+type User = {
+  name: string;
+  age: number;
+  isActive: true;
+};
 
-// function createUser(user: User) {
-//   return user;
-// }
+function createUser(user: User) {
+  return user;
+}
 
 // console.log({ name: "john", age: 24, isActive: true });
 
