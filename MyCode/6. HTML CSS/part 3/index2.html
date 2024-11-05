@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .card {
+      width: calc(100% / 3);
+      border: 1px solid grey;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 200px;
+    }
+
+    .pill {
+      background-color: lightblue;
+      width: fit-content;
+      padding: 4px 8px;
+      border-radius: 20px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .description {
+      text-align: center;
+      color: grey;
+    }
+    .btn {
+      border: 1px solid lightblue;
+      border-radius: 10px;
+      padding: 10px 20px;
+      width: 100%;
+      color: lightblue;
+      background-color: white;
+      margin-top: 40px;
+    }
+    .card-header {
+      position: relative;
+      padding-bottom: 40px;
+    }
+    .image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .overlay {
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(rgba(255, 255, 255, 0), white);
+      position: absolute;
+      bottom: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <div class="pill">Bootcamp</div>
+          <h4>Data</h4>
+          <img
+            src="https://dibimbing-cdn.sgp1.digitaloceanspaces.com/media-strapi/0722b7c83284ac04bb452d46ef59e34a.webp"
+            alt="mentor"
+            class="image"
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h2 class="title">Bootcamp Front End Web</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis numquam deserunt quae fugiat inventore ducimus soluta
+            repellat! Consequuntur, laboriosam! Quo?
+          </p>
+          <button class="btn">Pelajari selengkapnya</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="pill">Bootcamp</div>
+          <h4>Data</h4>
+          <img
+            src="https://dibimbing-cdn.sgp1.digitaloceanspaces.com/media-strapi/0722b7c83284ac04bb452d46ef59e34a.webp"
+            alt="mentor"
+            class="image"
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h2 class="title">Bootcamp Back End Web</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis numquam deserunt quae fugiat inventore ducimus soluta
+            repellat! Consequuntur, laboriosam! Quo?
+          </p>
+          <button class="btn">Pelajari selengkapnya</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="pill">Bootcamp</div>
+          <h4>Data</h4>
+          <img
+            src="https://dibimbing-cdn.sgp1.digitaloceanspaces.com/media-strapi/0722b7c83284ac04bb452d46ef59e34a.webp"
+            alt="mentor"
+            class="image"
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="card-body">
+          <h2 class="title">Bootcamp Data Sceince</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis numquam deserunt quae fugiat inventore ducimus soluta
+            repellat! Consequuntur, laboriosam! Quo?
+          </p>
+          <button class="btn">Pelajari selengkapnya</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
