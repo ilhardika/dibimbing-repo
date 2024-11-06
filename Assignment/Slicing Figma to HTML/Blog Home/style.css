@@ -1,0 +1,304 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  padding: 4px 208px;
+  background: #00252e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .nav-list {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-icon.facebook {
+  background-image: url("img/fb.png");
+}
+
+.social-icon.instagram {
+  background-image: url("img/ig.png");
+}
+
+.social-icon.twitter {
+  background-image: url("img/twitter.png");
+}
+
+.social-icon.linkedin {
+  background-image: url("img/linkedin.png");
+}
+
+.social-icon.tiktok {
+  background-image: url("img/tiktok.png");
+}
+
+.main-header {
+  padding: 16px 208px;
+  background: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.04);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.logo {
+  display: block;
+}
+
+.logo-image {
+  width: 130.29px;
+  height: 40px;
+}
+
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px;
+  color: #606062;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.nav-item-with-icon {
+  position: relative;
+}
+
+.dropdown-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  margin-left: 10px;
+}
+
+.search-button {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.main-section {
+  display: flex;
+  gap: 24px;
+  padding: 80px 208px;
+  max-width: 1440px;
+}
+
+.featured-article {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main-image {
+  width: 500px;
+  border-radius: 8px;
+}
+
+.category {
+  color: #939395;
+  font-size: 12px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.title {
+  color: #2e2e2e;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+.meta {
+  display: flex;
+  gap: 8px;
+  color: #939395;
+  font-size: 12px;
+  font-family: "Open Sans";
+  line-height: 18px;
+}
+
+.meta .author {
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  gap: 4px;
+  margin: 0 auto;
+}
+
+.active-dot {
+  width: 24px;
+  height: 4px;
+  background: #019fc4;
+  border-radius: 99px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  background: #adadae;
+  border-radius: 99px;
+}
+
+.trending-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.trending-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.trending-label {
+  padding: 8px 16px;
+  background: #019fc4;
+  color: white;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  line-height: 21px;
+  border-radius: 4px 4px 4px 0;
+}
+
+.trending-line {
+  flex: 1;
+  height: 41px;
+  display: flex;
+  flex-direction: column;
+}
+
+.line-bg {
+  flex: 1;
+  background: white;
+  border-top-left-radius: 4px;
+}
+
+.line-accent {
+  height: 4px;
+  background: #019fc4;
+  border-radius: 2px 2px 0 0;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 238px);
+  gap: 24px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.thumbnail {
+  width: 238px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.categories {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  width: 28px;
+  padding: 10px 16px;
+  border: 1px solid #019fc4;
+  border-radius: 6px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 12px;
+}
