@@ -432,3 +432,164 @@ body {
   font-weight: 600;
   margin: 4px 0 0;
 }
+
+.main-footer {
+  width: 100%;
+  padding: 80px 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+/* Company Info Styles */
+.company-info {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo {
+  width: 114px;
+  height: 35px;
+}
+
+.tagline {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 0;
+}
+
+.company-address {
+  color: #272727;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  font-style: normal;
+}
+
+.icon-inner {
+  width: 18px;
+  height: 18px;
+  background: #019fc4;
+}
+
+/* Navigation Styles */
+.footer-nav {
+  width: 200px;
+}
+
+.footer-nav h3 {
+  color: #7a7a7b;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-nav a {
+  color: #019fc4;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 21px;
+}
+
+/* Copyright Styles */
+.copyright {
+  text-align: center;
+}
+
+.copyright hr {
+  border: none;
+  border-top: 1px solid #f3f2ef;
+  margin-bottom: 24px;
+}
+
+.copyright p {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-social-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #dbf8ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.footer-social-icon:hover {
+  background-color: #b8f1ff;
+}
+
+.footer-facebook {
+  background-image: url("img/footer-fb.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-instagram {
+  background-image: url("img/footer-ig.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-twitter {
+  background-image: url("img/footer-twitter.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-linkedin {
+  background-image: url("img/footer-linkedin.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-tiktok {
+  background-image: url("img/footer-tiktok.png");
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
