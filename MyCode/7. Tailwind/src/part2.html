@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- <div class="flex items-center justify-between gap-4">
+      <div class="order-10 w-24 h-10 bg-red-500">1</div>
+      <div class="order-2 w-24 h-4 bg-red-500">2</div>
+    </div>
+
+    <div class="grid h-40 grid-cols-3 gap-10 bg-gray-300 place-items-center">
+      <div class="size-10 bg-blue-400 shadow-lg shadow-black">1</div>
+      <div class="size-10 bg-blue-400">2</div>
+      <div class="size-10 bg-blue-400">3</div>
+    </div>
+
+    <h1 class="text-3xl">Text Size</h1>
+    <h2 class="text-2xl">Text Size</h2>
+    <div class="container size-1/2">
+      <p class="line-clamp-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ipsam
+        enim ipsa voluptates vitae, iusto ullam sequi corrupti dignissimos nam
+        velit esse provident hic tempora earum ex molestiae laudantium! Libero
+        dolore recusandae nostrum sunt nihil debitis! Laudantium ipsa
+        perferendis in ad architecto exercitationem quos tempora ducimus cumque
+        labore eligendi repellat recusandae corrupti quas beatae odio corporis
+        ratione et aut totam at, minima iure enim debitis? Quibusdam nostrum
+        tenetur hic nulla perspiciatis. Nesciunt, ea doloremque maiores amet
+        aperiam expedita repudiandae sequi doloribus esse dicta nisi omnis
+        perspiciatis voluptate at alias consequatur molestias dolore eum ad non
+        quam voluptatibus rerum totam! Facere?
+      </p>
+    </div>
+
+    <div
+      class="w-full h-10 bg-gradient-to-r from-red-500 to-green-400 blur-sm"
+    ></div>
+    <div
+      class="w-full h-10 rounded-full border-dashed border-4 border-black outline outline-offset-4 outline-red-500 blu bg-gradient-to-tr from-yellow-500 to-red-400"
+    ></div> -->
+
+    <!-- Main Grid Container -->
+    <div class="grid grid-cols-2 gap-4 max-w-3xl mx-auto py-10">
+      <!-- Card 1 -->
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Japan"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Japan</h3>
+          <p class="text-sm text-gray-600">Jumlah pengunjung</p>
+          <!-- Progress Bar -->
+          <div class="relative pt-1">
+            <div
+              class="overflow-hidden h-6 text-xs flex items-center justify-center rounded bg-gray-200 group hover:bg-red-600"
+            >
+              <span
+                class="absolute font-semibold text-gray-700 group-hover:text-white"
+                >1000</span
+              >
+              <!-- Width set to 50% (1000 out of 2000) -->
+              <div
+                class="bg-transparent group-hover:bg-red-600 h-full"
+                style="width: 50%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Indonesia"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Indonesia</h3>
+          <p class="text-sm text-gray-600">Jumlah pengunjung</p>
+          <!-- Progress Bar -->
+          <div class="relative pt-1">
+            <div
+              class="overflow-hidden h-6 text-xs flex items-center justify-center rounded bg-gray-200 group hover:bg-red-600"
+            >
+              <span
+                class="absolute font-semibold text-gray-700 group-hover:text-white"
+                >2000</span
+              >
+              <!-- Width set to 100% (2000 out of 2000) -->
+              <div
+                class="bg-transparent group-hover:bg-red-600 h-full"
+                style="width: 100%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Switzerland"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Switzerland</h3>
+          <p class="text-sm text-gray-600">Jumlah pengunjung</p>
+          <!-- Progress Bar -->
+          <div class="relative pt-1">
+            <div
+              class="overflow-hidden h-6 text-xs flex items-center justify-center rounded bg-gray-200 group hover:bg-red-600"
+            >
+              <span
+                class="absolute font-semibold text-gray-700 group-hover:text-white"
+                >600</span
+              >
+              <!-- Width set to 30% (600 out of 2000) -->
+              <div
+                class="bg-transparent group-hover:bg-red-600 h-full w-3/12"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="border rounded-lg overflow-hidden shadow-md">
+        <img
+          src="https://via.placeholder.com/300x200"
+          alt="Brazil"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Brazil</h3>
+          <p class="text-sm text-gray-600">Jumlah pengunjung</p>
+          <!-- Progress Bar -->
+          <div class="relative pt-1">
+            <div
+              class="overflow-hidden h-6 text-xs flex items-center justify-center rounded bg-gray-200 group hover:bg-red-600"
+            >
+              <span
+                class="absolute font-semibold text-gray-700 group-hover:text-white"
+                >1500</span
+              >
+              <!-- Width set to 75% (1500 out of 2000) -->
+              <div
+                class="bg-transparent group-hover:bg-red-600 h-full"
+                style="width: 75%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
