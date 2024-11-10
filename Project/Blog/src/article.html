@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- topbar -->
+    <div
+      class="flex justify-between items-center w-full h-[26px] px-52 py-1 bg-[#00252e]"
+    >
+      <div
+        class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-6"
+      >
+        <a
+          href="./home.html"
+          class="flex-grow-0 flex-shrink-0 text-xs font-semibold text-left text-white"
+        >
+          Home
+        </a>
+        <a
+          href="./article.html"
+          class="flex-grow-0 flex-shrink-0 text-xs font-semibold text-left text-white"
+        >
+          Article
+        </a>
+      </div>
+      <div
+        class="flex justify-start items-end flex-grow-0 flex-shrink-0 relative gap-4"
+      >
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M15 2.25H3C2.58525 2.25 2.25 2.586 2.25 3V15C2.25 15.414 2.58525 15.75 3 15.75H9.46125V10.53H7.70775V8.48625H9.46125V6.98625C9.46125 5.2425 10.5262 4.29225 12.0863 4.29225C12.6105 4.29075 13.1355 4.31775 13.6575 4.3725V6.1875H12.5812C11.7352 6.1875 11.5702 6.591 11.5702 7.18125V8.4825H13.593L13.3305 10.5262H11.5695V15.75H15C15.4148 15.75 15.75 15.414 15.75 15V3C15.75 2.586 15.4148 2.25 15 2.25Z"
+            fill="white"
+          ></path></svg
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M15.7102 6.22872C15.702 5.66097 15.597 5.09772 15.396 4.56672C15.0442 3.65997 14.328 2.94297 13.4212 2.59197C12.897 2.39472 12.3427 2.28897 11.7817 2.27697C11.0602 2.24472 10.8315 2.23572 8.99999 2.23572C7.16849 2.23572 6.93374 2.23572 6.21749 2.27697C5.65724 2.28897 5.10299 2.39472 4.57874 2.59197C3.67199 2.94297 2.95499 3.65997 2.60399 4.56672C2.40674 5.09097 2.30024 5.64522 2.28974 6.20547C2.25749 6.92772 2.24774 7.15647 2.24774 8.98797C2.24774 10.8195 2.24774 11.0535 2.28974 11.7705C2.30099 12.3315 2.40674 12.885 2.60399 13.4107C2.95574 14.3167 3.67199 15.0337 4.57949 15.3847C5.10149 15.5887 5.65574 15.7042 6.21824 15.7222C6.94049 15.7545 7.16924 15.7642 9.00074 15.7642C10.8322 15.7642 11.067 15.7642 11.7832 15.7222C12.3435 15.711 12.8977 15.6052 13.4227 15.408C14.3295 15.0562 15.0457 14.3392 15.3975 13.4332C15.5947 12.9082 15.7005 12.3547 15.7117 11.793C15.744 11.0715 15.7537 10.8427 15.7537 9.01047C15.7522 7.17897 15.7522 6.94647 15.7102 6.22872ZM8.99549 12.4515C7.07999 12.4515 5.52824 10.8997 5.52824 8.98422C5.52824 7.06872 7.07999 5.51697 8.99549 5.51697C10.9095 5.51697 12.4627 7.06872 12.4627 8.98422C12.4627 10.8997 10.9095 12.4515 8.99549 12.4515ZM12.6007 6.19722C12.153 6.19722 11.7922 5.83572 11.7922 5.38872C11.7922 4.94172 12.153 4.58022 12.6007 4.58022C13.047 4.58022 13.4085 4.94172 13.4085 5.38872C13.4085 5.83572 13.047 6.19722 12.6007 6.19722Z"
+            fill="white"
+          ></path>
+          <path
+            d="M8.99551 11.2366C10.2394 11.2366 11.2478 10.2282 11.2478 8.98431C11.2478 7.74042 10.2394 6.73206 8.99551 6.73206C7.75162 6.73206 6.74326 7.74042 6.74326 8.98431C6.74326 10.2282 7.75162 11.2366 8.99551 11.2366Z"
+            fill="white"
+          ></path></svg
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M15 2.25H3C2.58525 2.25 2.25 2.586 2.25 3V15C2.25 15.414 2.58525 15.75 3 15.75H15C15.4148 15.75 15.75 15.414 15.75 15V3C15.75 2.586 15.4148 2.25 15 2.25ZM6.25425 13.7528H4.25025V7.31025H6.25425V13.7528ZM5.25225 6.4305C4.61025 6.4305 4.09125 5.91 4.09125 5.2695C4.09125 4.629 4.6095 4.1085 5.25225 4.1085C5.89275 4.1085 6.41325 4.62825 6.41325 5.2695C6.41325 5.91075 5.89275 6.4305 5.25225 6.4305ZM13.7535 13.7528H11.7517V10.62C11.7517 9.873 11.7382 8.91225 10.7108 8.91225C9.66825 8.91225 9.51 9.72675 9.51 10.5675V13.7535H7.50975V7.311H9.42975V8.1915H9.4575C9.72375 7.68525 10.3777 7.15125 11.3505 7.15125C13.3785 7.15125 13.7528 8.48475 13.7528 10.2203V13.7528H13.7535Z"
+            fill="white"
+          ></path></svg
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M14.6925 5.0175C13.9449 4.85309 13.2685 4.45608 12.7605 3.88342C12.2526 3.31076 11.939 2.5919 11.865 1.83V1.5H9.27749V11.7525C9.27801 12.2074 9.13539 12.651 8.86982 13.0203C8.60425 13.3897 8.22919 13.6661 7.79778 13.8105C7.36637 13.9548 6.90048 13.9598 6.46609 13.8247C6.03171 13.6895 5.65086 13.4211 5.37749 13.0575C5.13257 12.7356 4.9826 12.3517 4.94453 11.949C4.90647 11.5463 4.98182 11.1411 5.16207 10.779C5.34232 10.4169 5.62028 10.1125 5.96452 9.90019C6.30876 9.68786 6.70554 9.57609 7.10999 9.5775C7.33367 9.57622 7.55623 9.6091 7.76999 9.675V7.05C7.52124 7.01919 7.27057 7.00666 7.01999 7.0125C6.09697 7.03716 5.20118 7.33045 4.4423 7.85645C3.68342 8.38245 3.0944 9.11833 2.74737 9.97398C2.40033 10.8296 2.31035 11.7679 2.48842 12.6739C2.6665 13.5799 3.10492 14.4144 3.74999 15.075C4.4111 15.7472 5.25711 16.2076 6.18051 16.3978C7.10391 16.5881 8.06302 16.4995 8.93598 16.1434C9.80894 15.7873 10.5563 15.1798 11.0832 14.3979C11.6101 13.6161 11.8926 12.6953 11.895 11.7525V6.5025C12.9386 7.24796 14.19 7.64673 15.4725 7.6425V5.0925C15.2206 5.09354 14.9692 5.0684 14.7225 5.0175H14.6925Z"
+            fill="white"
+          ></path></svg
+        ><svg
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-[18px] h-[18px] relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M14.7247 5.99778C14.7345 6.12903 14.7345 6.25953 14.7345 6.39003C14.7345 10.3838 11.6947 14.9858 6.1395 14.9858C4.428 14.9858 2.838 14.49 1.5 13.629C1.743 13.6568 1.977 13.6665 2.22975 13.6665C3.642 13.6665 4.94175 13.1895 5.9805 12.3758C4.65225 12.348 3.53925 11.478 3.15525 10.281C3.342 10.3088 3.5295 10.3275 3.726 10.3275C3.99675 10.3275 4.269 10.29 4.52175 10.2248C3.1365 9.94428 2.09925 8.72853 2.09925 7.26003V7.22253C2.502 7.44678 2.96925 7.58703 3.46425 7.60578C2.6505 7.06428 2.11725 6.13803 2.11725 5.09028C2.11725 4.52928 2.2665 4.01478 2.52825 3.56628C4.0155 5.39853 6.25125 6.59628 8.75775 6.72753C8.71125 6.50253 8.68275 6.26928 8.68275 6.03528C8.68275 4.37028 10.0297 3.01428 11.7037 3.01428C12.5737 3.01428 13.359 3.37878 13.911 3.96828C14.5935 3.83703 15.2475 3.58428 15.828 3.23853C15.6038 3.93978 15.126 4.52928 14.4998 4.90353C15.108 4.83753 15.6975 4.66953 16.239 4.43553C15.828 5.03403 15.3142 5.56728 14.7247 5.99778Z"
+            fill="white"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <div
+      class="flex flex-col justify-start items-start w-full relative overflow-hidden gap-4 px-52 py-4 bg-white"
+      style="
+        box-shadow: 0px 20px 25px 0 rgba(0, 0, 0, 0.05),
+          0px 10px 10px 0 rgba(0, 0, 0, 0.04);
+      "
+    >
+      <img
+        src="https://placehold.co/150x50"
+        class="flex-grow-0 flex-shrink-0 w-[130.29px] h-10 object-contain"
+      />
+      <div
+        class="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 relative"
+      >
+        <div
+          class="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-2.5"
+        >
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1 p-2.5"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#606062]"
+            >
+              Career
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1 p-2.5"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#606062]"
+            >
+              Data Science
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1 p-2.5"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#606062]"
+            >
+              Digital Marketing
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1 p-2.5"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#606062]"
+            >
+              Web Development
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1 p-2.5"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#606062]"
+            >
+              UIUX Design
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-1 p-2.5"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-[#606062]"
+            >
+              Lainnya
+            </p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                d="M16.293 9.29297L12 13.586L7.707 9.29297L6.293 10.707L12 16.414L17.707 10.707L16.293 9.29297Z"
+                fill="#606062"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path
+            d="M10 18C11.846 18 13.543 17.365 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.365 13.543 18 11.846 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
+            fill="#606062"
+          ></path>
+          <path
+            d="M11.412 8.58596C11.791 8.96596 12 9.46796 12 9.99996H14C14 8.93496 13.584 7.93096 12.826 7.17196C11.312 5.65996 8.68701 5.65996 7.17401 7.17196L8.58601 8.58796C9.34601 7.82996 10.656 7.83196 11.412 8.58596Z"
+            fill="#606062"
+          ></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div
+      class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-6 px-52 py-20 bg-black"
+    >
+      <p
+        class="flex-grow-0 flex-shrink-0 text-xs font-bold text-left text-white"
+      >
+        DIGITAL MARKETING
+      </p>
+      <p
+        class="self-stretch flex-grow-0 flex-shrink-0 w-[1024px] text-[32px] font-semibold text-left text-white"
+      >
+        Copywriting vs Content Writing, Ini 5 Perbedaan yang Harus Kamu Ketahui
+      </p>
+      <p
+        class="self-stretch flex-grow-0 flex-shrink-0 w-[1024px] text-base text-left text-white"
+      >
+        Ada dua profesi tulis menulis yang sangat penting dalam dunia marketing.
+        Yaitu, copywriting dan content writing. Tapi sebelum lanjut lebih dalam,
+        kira-kira Sobat MinDi udah tau perbedaannya belum?
+      </p>
+      <div
+        class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2"
+      >
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">
+          <span class="flex-grow-0 flex-shrink-0 text-xs text-left text-white"
+            >Oleh</span
+          ><span
+            class="flex-grow-0 flex-shrink-0 text-xs font-semibold text-left text-white"
+          >
+            Wade Warren</span
+          >
+        </p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">•</p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">
+          <span class="flex-grow-0 flex-shrink-0 text-xs text-left text-white"
+            >Konten ini telah ditinjau oleh </span
+          ><span
+            class="flex-grow-0 flex-shrink-0 text-xs font-semibold text-left text-white"
+            >Darlene Robertson - Mentor Digital Marketing Dibimbing</span
+          >
+        </p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">•</p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">
+          26 Jan 2019
+        </p>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">•</p>
+        <div
+          class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M4.66663 4.66669H11.3333V6.00002H4.66663V4.66669ZM4.66663 7.33335H9.33329V8.66669H4.66663V7.33335Z"
+              fill="white"
+            ></path>
+            <path
+              d="M13.3334 1.33331H2.66671C1.93137 1.33331 1.33337 1.93131 1.33337 2.66665V14.6666L4.88871 12H13.3334C14.0687 12 14.6667 11.402 14.6667 10.6666V2.66665C14.6667 1.93131 14.0687 1.33331 13.3334 1.33331ZM13.3334 10.6666H4.44471L2.66671 12V2.66665H13.3334V10.6666Z"
+              fill="white"
+            ></path>
+          </svg>
+          <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">
+            23
+          </p>
+        </div>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">•</p>
+        <div
+          class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M8.00004 1.33331C4.32404 1.33331 1.33337 4.32398 1.33337 7.99998C1.33337 11.676 4.32404 14.6666 8.00004 14.6666C11.676 14.6666 14.6667 11.676 14.6667 7.99998C14.6667 4.32398 11.676 1.33331 8.00004 1.33331ZM8.00004 13.3333C5.05937 13.3333 2.66671 10.9406 2.66671 7.99998C2.66671 5.05931 5.05937 2.66665 8.00004 2.66665C10.9407 2.66665 13.3334 5.05931 13.3334 7.99998C13.3334 10.9406 10.9407 13.3333 8.00004 13.3333Z"
+              fill="white"
+            ></path>
+            <path
+              d="M8.66671 4.66669H7.33337V8.27602L9.52871 10.4714L10.4714 9.52869L8.66671 7.72402V4.66669Z"
+              fill="white"
+            ></path>
+          </svg>
+          <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">
+            5 min Read
+          </p>
+        </div>
+        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">•</p>
+        <div
+          class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-1"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M8 6C6.90533 6 6 6.906 6 8C6 9.09467 6.90533 10 8 10C9.094 10 10 9.09467 10 8C10 6.906 9.094 6 8 6Z"
+              fill="white"
+            ></path>
+            <path
+              d="M8.00003 3.33331C2.91136 3.33331 1.38203 7.74465 1.36803 7.78931L1.29736 7.99998L1.36736 8.21065C1.38203 8.25531 2.91136 12.6666 8.00003 12.6666C13.0887 12.6666 14.618 8.25531 14.632 8.21065L14.7027 7.99998L14.6327 7.78931C14.618 7.74465 13.0887 3.33331 8.00003 3.33331ZM8.00003 11.3333C4.4327 11.3333 3.0507 8.76931 2.71603 7.99998C3.05203 7.22798 4.4347 4.66665 8.00003 4.66665C11.5674 4.66665 12.9494 7.23065 13.284 7.99998C12.948 8.77198 11.5654 11.3333 8.00003 11.3333Z"
+              fill="white"
+            ></path>
+          </svg>
+          <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">
+            175
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2"
+      >
+        <p
+          class="flex-grow-0 flex-shrink-0 text-xs font-semibold text-left text-white"
+        >
+          Share
+        </p>
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-10 h-10 relative gap-2.5 p-2 rounded-[99px] bg-transparent"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M8.93127 13.998V8.53398H10.7746L11.0486 6.39464H8.93127V5.03198C8.93127 4.41464 9.10327 3.99198 9.98927 3.99198H11.1119V2.08464C10.5659 2.02598 10.0166 1.99798 9.46727 1.99998C7.83794 1.99998 6.71927 2.99464 6.71927 4.82064V6.39064H4.88794V8.52998H6.72327V13.998H8.93127Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-10 h-10 relative gap-2.5 p-2 rounded-[99px] bg-transparent"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M13.0887 5.33132C13.0974 5.44799 13.0974 5.56399 13.0974 5.67999C13.0974 9.22999 10.3954 13.3207 5.45737 13.3207C3.93604 13.3207 2.52271 12.88 1.33337 12.1147C1.54937 12.1393 1.75737 12.148 1.98204 12.148C3.23737 12.148 4.39271 11.724 5.31604 11.0007C4.13537 10.976 3.14604 10.2027 2.80471 9.13865C2.97071 9.16332 3.13737 9.17999 3.31204 9.17999C3.55271 9.17999 3.79471 9.14665 4.01937 9.08865C2.78804 8.83932 1.86604 7.75865 1.86604 6.45332V6.41999C2.22404 6.61932 2.63937 6.74399 3.07937 6.76065C2.35604 6.27932 1.88204 5.45599 1.88204 4.52465C1.88204 4.02599 2.01471 3.56865 2.24737 3.16999C3.56937 4.79865 5.55671 5.86332 7.78471 5.97999C7.74337 5.77999 7.71804 5.57265 7.71804 5.36465C7.71804 3.88465 8.91537 2.67932 10.4034 2.67932C11.1767 2.67932 11.8747 3.00332 12.3654 3.52732C12.972 3.41065 13.5534 3.18599 14.0694 2.87865C13.87 3.50199 13.4454 4.02599 12.8887 4.35865C13.4294 4.29999 13.9534 4.15065 14.4347 3.94265C14.0694 4.47465 13.6127 4.94865 13.0887 5.33132Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-10 h-10 relative gap-2.5 p-2 rounded-[99px] bg-transparent"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.2687 3.75533C11.1387 2.624 9.636 2.00067 8.03533 2C4.73667 2 2.05133 4.68467 2.05 7.98467C2.05 9.03933 2.32533 10.0687 2.84867 10.9767L2 14.0773L5.17267 13.2447C6.04733 13.7213 7.03133 13.9727 8.03267 13.9733H8.03533C11.3333 13.9733 14.0187 11.2887 14.02 7.98867C14.02 6.39 13.3987 4.88667 12.2687 3.75533ZM8.03533 12.9633H8.03333C7.14067 12.9627 6.26533 12.7233 5.50133 12.2693L5.32 12.1613L3.43733 12.6553L3.93933 10.82L3.82133 10.632C3.32333 9.84 3.06067 8.92467 3.06067 7.98467C3.062 5.242 5.29333 3.01067 8.03733 3.01067C9.366 3.01133 10.6147 3.52933 11.554 4.46933C12.4927 5.41 13.01 6.65933 13.0093 7.98867C13.008 10.7313 10.7767 12.9633 8.03533 12.9633ZM10.764 9.23733C10.614 9.162 9.87933 8.80067 9.742 8.75067C9.60533 8.70067 9.506 8.676 9.406 8.82533C9.306 8.97467 9.01933 9.31133 8.932 9.41133C8.84467 9.51133 8.75733 9.52333 8.608 9.44867C8.45867 9.374 7.97667 9.216 7.40533 8.70667C6.96067 8.31 6.66067 7.82067 6.57333 7.67067C6.486 7.52067 6.564 7.44 6.63933 7.36533C6.70667 7.29867 6.78867 7.19067 6.86333 7.10333C6.938 7.016 6.96267 6.954 7.01267 6.854C7.06267 6.754 7.038 6.66667 7 6.592C6.96267 6.51667 6.66333 5.78067 6.53867 5.48133C6.418 5.19133 6.29467 5.23 6.20267 5.226C6.116 5.222 6.016 5.22067 5.91667 5.22067C5.81667 5.22067 5.65467 5.258 5.51733 5.40733C5.38 5.55733 4.994 5.91867 4.994 6.65467C4.994 7.39067 5.53 8.102 5.60467 8.202C5.67933 8.302 6.65933 9.812 8.15933 10.46C8.51667 10.614 8.79533 10.706 9.012 10.7753C9.37 10.8893 9.696 10.8727 9.954 10.8347C10.2413 10.792 10.8387 10.4733 10.9633 10.124C11.088 9.77467 11.088 9.47533 11.0507 9.41267C11.0133 9.35 10.9127 9.312 10.764 9.23733Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-10 h-10 relative gap-2.5 p-2 rounded-[99px] bg-transparent"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M3.32195 4.79801C4.12755 4.79801 4.78061 4.14494 4.78061 3.33934C4.78061 2.53374 4.12755 1.88068 3.32195 1.88068C2.51635 1.88068 1.86328 2.53374 1.86328 3.33934C1.86328 4.14494 2.51635 4.79801 3.32195 4.79801Z"
+              fill="white"
+            ></path>
+            <path
+              d="M6.15802 5.90331V13.996H8.67069V9.99397C8.67069 8.93797 8.86935 7.91531 10.1787 7.91531C11.47 7.91531 11.486 9.12264 11.486 10.0606V13.9966H14V9.55864C14 7.37864 13.5307 5.70331 10.9827 5.70331C9.75935 5.70331 8.93935 6.37464 8.60402 7.00997H8.57002V5.90331H6.15802V5.90331ZM2.06335 5.90331H4.58002V13.996H2.06335V5.90331Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <div
+          class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-10 h-10 relative gap-2.5 p-2 rounded-[99px] bg-transparent"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+            preserveAspectRatio="xMidYMid meet"
+          >
+            <path
+              d="M5.64335 7.52865C6.39868 6.77331 7.71601 6.77331 8.47135 7.52865L8.94268 7.99998L9.88535 7.05731L9.41401 6.58598C8.78535 5.95665 7.94801 5.60931 7.05735 5.60931C6.16668 5.60931 5.32935 5.95665 4.70068 6.58598L3.28601 7.99998C1.98735 9.29931 1.98735 11.4146 3.28601 12.714C3.93601 13.364 4.78935 13.6886 5.64268 13.6886C6.49668 13.6886 7.35068 13.364 8.00001 12.714L8.47135 12.2426L7.52868 11.3L7.05735 11.7713C6.27735 12.5493 5.00868 12.5506 4.22868 11.7713C3.44935 10.9913 3.44935 9.72265 4.22868 8.94265L5.64335 7.52865Z"
+              fill="white"
+            ></path>
+            <path
+              d="M7.99996 3.28603L7.52862 3.75736L8.47129 4.70003L8.94262 4.2287C9.72196 3.4507 10.9906 3.44936 11.7713 4.2287C12.5506 5.0087 12.5506 6.27736 11.7713 7.05736L10.3566 8.47136C9.60129 9.2267 8.28396 9.2267 7.52862 8.47136L7.05729 8.00003L6.11462 8.9427L6.58596 9.41403C7.21462 10.0434 8.05196 10.3907 8.94262 10.3907C9.83329 10.3907 10.6706 10.0434 11.2993 9.41403L12.714 8.00003C14.0126 6.7007 14.0126 4.58536 12.714 3.28603C11.414 1.98603 9.29862 1.9867 7.99996 3.28603Z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- artcile content -->
+    <div
+      class="flex justify-start w-full items-start self-stretch flex-grow-0 flex-shrink-0 gap-12 px-52 py-20"
+    >
+      <div
+        class="flex flex-col justify-center items-center flex-grow relative gap-10 text-justify"
+      >
+        <div
+          class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2 p-4 rounded-lg bg-[#f2f2f2]"
+        >
+          <p
+            class="flex-grow-0 flex-shrink-0 text-lg font-bold text-left text-[#2e2e2e]"
+          >
+            Isi Artikel
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-[#019fc4]">
+            1. Pengertian copywriting dan content writing
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-[#019fc4]">
+            2. Tujuan penulisan
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-[#019fc4]">
+            3. Bentuk tulisan
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-[#019fc4]">
+            4. Skill yang dibutuhkan masing-masing profesi
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-lg text-left text-[#019fc4]">
+            5. Traffic
+          </p>
+        </div>
+        <img
+          src="https://placehold.co/650x300"
+          class="self-stretch flex-grow-0 flex-shrink-0 h-[300px] rounded-lg object-cover"
+        />
+        <p
+          class="self-stretch text-justify flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+        >
+          <span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Munculnya Covid-19 di Indonesia mengubah seluruh aktivitas menjadi
+            online. Semenjak itu skill digital marketing mulai digemari dan
+            menjadi salah satu skill penting agar bisnis bisa adaptif dengan
+            situasi serba online seperti ini. Ngomongin soal digital marketing,
+            kira-kira Sobat MinDi udah tau belum profesi apa saja yang bisa kamu
+            jajal dalam bidang ini? </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Kali ini MinDi akan bahas profesi tulis menulis yang erat kaitannya
+            dengan digital marketing. Ada dua profesi tulis menulis yang sangat
+            penting dalam dunia marketing. Yaitu, copywriting dan content
+            writing. Tapi sebelum lanjut lebih dalam, kira-kira Sobat MinDi udah
+            tau perbedaannya belum? Atau jangan-jangan kamu masih menganggap dua
+            profesi ini adalah hal yang sama? </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Buat kamu yang tertarik untuk menyelam dalam profesi ini wajib tau
+            ya tentang perbedaannya. Agar kamu gak salah menyelam, yuk simak
+            lebih lanjut! </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Perbedaan Copywriting dan Content Writing </span
+          ><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Meski keduanya sama-sama kegiatan yang berkecimpung dalam dunia
+            kepenulisan, tapi dua profesi ini sama sekali berbeda, lho. Baik
+            dari segi tujuan penulisan hingga teknik penulisannya. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            1. Pengertian copywriting dan content writing </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Sobat MinDi pernah penasaran gak sih siapa sosok dibalik pembuat
+            iklan-iklan yang sering muncul di social media atau kadang nyempil
+            di website saat kamu lagi baca suatu artikel? Ternyata itu adalah
+            hasil dari copywriting, lho. Jadi copywriting adalah kegiatan
+            merencanakan, menulis, dan menghasilkan konten berupa teks untuk
+            pemasaran. Tulisan-tulisan mereka nantinya akan dicantumkan dalam
+            slogan, tagline, kalimat-kalimat menarik yang sering kamu lihat di
+            iklan suatu produk. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Nah sementara content writing adalah kegiatan merencanakan, menulis,
+            dan menghasilkan konten yang berisi informasi atau penjelasan
+            mendetail tentang suatu produk. Kalau kamu sering membaca postingan
+            artikel di website-website, atau newsletter yang sering kamu terima
+            di email, itu adalah konten yang dihasilkan dari profesi ini. Jadi
+            intinya, content writer akan menghasilkan sebuah konten yang membuat
+            kamu lebih memahami suatu produk. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            2. Tujuan penulisan </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Bisa dibilang tujuan besar kedua profesi ini sama, yaitu menciptakan
+            konten. Tapi kalau dilihat secara spesifik, tujuan dari kedua
+            profesi ini akan sangat berbeda lho. Seorang copywriter akan membuat
+            konten berupa teks yang tujuannya untuk promosi produk. Konten yang
+            diciptakan juga harus memperhatikan slogan atau tagline yang eye
+            catching, sehingga bisa mempersuasif audiens untuk membeli dan
+            menggunakan suatu produk. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Nah sedangkan seorang content writer membuat konten untuk
+            menjelaskan atau menginformasikan detail tentang suatu produk.
+            Konten yang diproduksi oleh content writer lebih berfokus memberikan
+            pengenalan, arahan, tips, yang dikemas sedemikian rupa dan mengikuti
+            kaidah SEO best-practice. Konten yang diproduksi oleh content writer
+            ini nantinya akan memudahkan audiens untuk memahami produk yang ia
+            beli atau gunakan. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            3. Bentuk tulisan </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Pernah lihat tagline iklan yang agak nyeleneh sampai bikin kamu
+            geleng-geleng? Atau liat script iklan yang kreatif banget sampai
+            bikin kamu ketawa? Nah itu dia hasil kerja keras dari para
+            copywriter, lho. Seperti yang udah MinDi sebut dipoin sebelumnya,
+            copywriter ini kan tujuannya untuk promosi atau komersil, jadi
+            tulisan yang dihasilkan harus kreatif dan menarik. Tulisan ini
+            nantinya akan dipampang di slogan, Google Ads, Social Media Ads,
+            Billboard, hingga Script iklan yang sering kamu dengar di TV,
+            Youtube hingga Spotify. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Nah kalau content writer ini gak jauh-jauh dari skill SEO, nih.
+            Sobat MinDi pasti sering menemukan konten-konten instagram yang
+            rasanya relate banget sama kamu kan? Nah, itu dia bentuk tulisan
+            yang dihasilkan sama content writer. Profesi ini berusaha buat
+            mengerti trend, kebutuhan, dan keinginan audiens. Lalu disesuaikan
+            dengan suatu produk yang mereka miliki, kemudian dikemas menjadi
+            sebuah script untuk konten di youtube atau bahkan podcast, e-book,
+            email marketing atau newsletter, tulisan di blog. Nah, seperti yang
+            Sobat MinDi lagi baca, ini juga hasil kerja dari content writer,
+            lho! </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            4. Skill yang dibutuhkan masing-masing profesi </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Nah karena tujuan penulisannya berbeda, masing-masing profesi ini
+            juga membutuhkan skill yang berbeda. Seorang copywriter yang
+            bertugas untuk menciptakan iklan tentu saja dituntut untuk memiliki
+            kemampuan persuasif dan tingkat kreativitas yang tinggi. Kenapa?
+            Tentu saja agar tulisan yang diciptakan bisa eye catching, membuat
+            orang yang membacanya jadi tertarik dan penasaran tentang suatu
+            produk. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Kemudian sekarang menjadi tugas content writer agar audiens memahami
+            lebih lanjut tentang produk yang sedang dicari-cari. Jadi, penting
+            sekali seorang content writer memiliki skill SEO dan kepekaan agar
+            bisa memahami trend, kebutuhan, dan keinginan audiens. Mereka juga
+            harus bisa mengemas tulisan menjadi menarik namun tetap mudah
+            dipahami audiens. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            5. Traffic </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+          >
+            Pengukuran kinerja masing-masing role akan sangat berbeda, sesuai
+            dengan tujuannya. Untuk copywriting akan lebih dekat dengan paid
+            channel, seperti Google Ads dan Social Media Ads. Pengukuran
+            performa konten yang dihasilkan oleh copywriter juga dapat dilakukan
+            lebih cepat dalam hitungan hari atau bahkan jam, bisa juga
+            mengukurnya dengan KPI (Key Performance Indicator). </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Sementara content writing akan lebih erat kaitannya dengan strategi
+            optimasi SEO yang merupakan channel organic. Berbeda dengan
+            copywriting yang dapat diukur secara lebih cepat, pengukuran content
+            writer diukur dalam jangka panjang, bisa hingga 6 bulan. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Nah itu dia beberapa perbedaan mengenai copywriting dan content
+            writing. Bagi kamu yang pengen tau lebih dalam dan terjun ke dua
+            profesi tersebut, kamu bisa ikuti Bootcamp Digital Marketing dari
+            dibimbing.id. </span
+          ><br /><br /><span
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[651px] text-base text-left text-[#2e2e2e]"
+            >Kenapa harus dibimbing.id? Karena bootcamp yang diadakan oleh
+            dibimbing.id bakalan kasih kamu materi lengkap tentang digital
+            marketing, termasuk tentang copywriting dan content writing. Gak
+            sampai disitu aja, dengan mengikuti bootcamp ini kamu juga bisa
+            konsultasi pribadi dengan mentor yang dijamin udah sangat
+            berpengalaman. Selesai mengikuti bootcamp kamu juga akan
+            berkesempatan untuk mendapatkan penyaluran kerja. Nah, tunggu apa
+            lagi, yuk segera daftar bootcamp-nya disini!
+          </span>
+        </p>
+        <div
+          class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2"
+        >
+          <p
+            class="flex-grow-0 flex-shrink-0 text-xs font-bold text-left text-[#2e2e2e]"
+          >
+            Keyword:
+          </p>
+          <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-[#2e2e2e]">
+            Copywriting, Content Writing, Copywriter, Content Writer
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[325px] relative gap-4"
+      >
+        <p
+          class="flex-grow-0 flex-shrink-0 text-lg font-bold text-left text-[#2e2e2e]"
+        >
+          Artikel Terbaru
+        </p>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            Your Must-Read Roadmap to Optimize for New HTS ...
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            Transport Update
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            FWD21 Kicks Off with a Keynote on Empowering the Global Trade ...
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            New Post-Covid Indicator Predicts Goods Demand Rising High by Fall
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            7 reasons why your competitor is moving their freight online
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            New Post-Covid Indicator Values Predict Summer Goods Demand
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            Current US Unemployment Rate Could Reset Baselines
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            Combatting Coronavirus Chaos
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            Digital Freight Forwarding how it can unlock secrets of your supply
+            ...
+          </p>
+        </div>
+        <div
+          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 relative gap-3.5"
+        >
+          <img
+            src="https://placehold.co/64"
+            class="flex-grow-0 flex-shrink-0 w-16 h-16 rounded-lg object-cover"
+          />
+          <p
+            class="flex-grow w-[247px] text-sm font-semibold text-left text-[#2e2e2e]"
+          >
+            Your Must-Read Roadmap to Optimize for New HTS Codes
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="flex flex-col justify-start items-start w-full overflow-hidden gap-20 px-52 py-20"
+    >
+      <div
+        class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-20"
+      >
+        <div
+          class="flex flex-col justify-start items-start flex-grow relative gap-10"
+        >
+          <div
+            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5"
+          >
+            <img
+              src="https://placehold.co/115x35"
+              class="flex-grow-0 flex-shrink-0 w-[114px] h-[35px] object-cover"
+            />
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#595959]"
+            >
+              Your Career Partner
+            </p>
+          </div>
+          <p
+            class="self-stretch flex-grow-0 flex-shrink-0 w-[464px] text-sm text-left text-[#272727]"
+          >
+            <span
+              class="self-stretch flex-grow-0 flex-shrink-0 w-[464px] text-sm text-left text-[#272727]"
+              >PT. Dibimbing Digital Indonesia </span
+            ><br /><span
+              class="self-stretch flex-grow-0 flex-shrink-0 w-[464px] text-sm text-left text-[#272727]"
+              >Jl. Kemang Utara E No.52B, RT.8/RW.1, Bangka, Kec. Mampang Prpt.,
+              Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730</span
+            >
+          </p>
+          <div
+            class="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-6"
+          >
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0 w-12 h-12 relative"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <rect width="48" height="48" rx="24" fill="#DBF8FF"></rect>
+              <path
+                d="M32 15H16C15.447 15 15 15.448 15 16V32C15 32.552 15.447 33 16 33H24.615V26.04H22.277V23.315H24.615V21.315C24.615 18.99 26.035 17.723 28.115 17.723C28.814 17.721 29.514 17.757 30.21 17.83V20.25H28.775C27.647 20.25 27.427 20.788 27.427 21.575V23.31H30.124L29.774 26.035H27.426V33H32C32.553 33 33 32.552 33 32V16C33 15.448 32.553 15 32 15Z"
+                fill="#019FC4"
+              ></path></svg
+            ><svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0 w-12 h-12 relative"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <rect width="48" height="48" rx="24" fill="#DBF8FF"></rect>
+              <path
+                d="M32.947 20.305C32.936 19.548 32.796 18.797 32.528 18.089C32.059 16.88 31.104 15.924 29.895 15.456C29.196 15.193 28.457 15.052 27.709 15.036C26.747 14.993 26.442 14.981 24 14.981C21.558 14.981 21.245 14.981 20.29 15.036C19.543 15.052 18.804 15.193 18.105 15.456C16.896 15.924 15.94 16.88 15.472 18.089C15.209 18.788 15.067 19.527 15.053 20.274C15.01 21.237 14.997 21.542 14.997 23.984C14.997 26.426 14.997 26.738 15.053 27.694C15.068 28.442 15.209 29.18 15.472 29.881C15.941 31.089 16.896 32.045 18.106 32.513C18.802 32.785 19.541 32.939 20.291 32.963C21.254 33.006 21.559 33.019 24.001 33.019C26.443 33.019 26.756 33.019 27.711 32.963C28.458 32.948 29.197 32.807 29.897 32.544C31.106 32.075 32.061 31.119 32.53 29.911C32.793 29.211 32.934 28.473 32.949 27.724C32.992 26.762 33.005 26.457 33.005 24.014C33.003 21.572 33.003 21.262 32.947 20.305ZM23.994 28.602C21.44 28.602 19.371 26.533 19.371 23.979C19.371 21.425 21.44 19.356 23.994 19.356C26.546 19.356 28.617 21.425 28.617 23.979C28.617 26.533 26.546 28.602 23.994 28.602ZM28.801 20.263C28.204 20.263 27.723 19.781 27.723 19.185C27.723 18.589 28.204 18.107 28.801 18.107C29.396 18.107 29.878 18.589 29.878 19.185C29.878 19.781 29.396 20.263 28.801 20.263Z"
+                fill="#019FC4"
+              ></path>
+              <path
+                d="M23.994 26.982C25.6525 26.982 26.997 25.6375 26.997 23.979C26.997 22.3204 25.6525 20.976 23.994 20.976C22.3355 20.976 20.991 22.3204 20.991 23.979C20.991 25.6375 22.3355 26.982 23.994 26.982Z"
+                fill="#019FC4"
+              ></path></svg
+            ><svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0 w-12 h-12 relative"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <rect width="48" height="48" rx="24" fill="#DBF8FF"></rect>
+              <path
+                d="M32 15H16C15.447 15 15 15.448 15 16V32C15 32.552 15.447 33 16 33H32C32.553 33 33 32.552 33 32V16C33 15.448 32.553 15 32 15ZM20.339 30.337H17.667V21.747H20.339V30.337ZM19.003 20.574C18.147 20.574 17.455 19.88 17.455 19.026C17.455 18.172 18.146 17.478 19.003 17.478C19.857 17.478 20.551 18.171 20.551 19.026C20.551 19.881 19.857 20.574 19.003 20.574ZM30.338 30.337H27.669V26.16C27.669 25.164 27.651 23.883 26.281 23.883C24.891 23.883 24.68 24.969 24.68 26.09V30.338H22.013V21.748H24.573V22.922H24.61C24.965 22.247 25.837 21.535 27.134 21.535C29.838 21.535 30.337 23.313 30.337 25.627V30.337H30.338Z"
+                fill="#019FC4"
+              ></path></svg
+            ><svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0 w-12 h-12 relative"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <rect width="48" height="48" rx="24" fill="#DBF8FF"></rect>
+              <path
+                d="M31.59 18.69C30.5932 18.4708 29.6914 17.9414 29.0141 17.1779C28.3368 16.4143 27.9187 15.4559 27.82 14.44V14H24.37V27.67C24.3707 28.2766 24.1805 28.868 23.8264 29.3604C23.4723 29.8529 22.9723 30.2215 22.3971 30.414C21.8218 30.6065 21.2006 30.6131 20.6215 30.4329C20.0423 30.2527 19.5345 29.8948 19.17 29.41C18.8434 28.9808 18.6435 28.4689 18.5927 27.932C18.542 27.3951 18.6424 26.8548 18.8828 26.372C19.1231 25.8892 19.4937 25.4834 19.9527 25.2003C20.4117 24.9172 20.9407 24.7681 21.48 24.77C21.7782 24.7683 22.075 24.8121 22.36 24.9V21.4C22.0283 21.3589 21.6941 21.3422 21.36 21.35C20.1293 21.3829 18.9349 21.7739 17.9231 22.4753C16.9112 23.1766 16.1259 24.1578 15.6632 25.2986C15.2005 26.4395 15.0805 27.6905 15.3179 28.8986C15.5553 30.1066 16.1399 31.2191 17 32.1C17.8815 32.9962 19.0095 33.6101 20.2407 33.8638C21.4719 34.1175 22.7507 33.9994 23.9146 33.5246C25.0786 33.0498 26.0751 32.2397 26.7776 31.1973C27.4801 30.1548 27.8569 28.9271 27.86 27.67V20.67C29.2515 21.6639 30.92 22.1956 32.63 22.19V18.79C32.2941 18.7914 31.959 18.7579 31.63 18.69H31.59Z"
+                fill="#019FC4"
+              ></path></svg
+            ><svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="flex-grow-0 flex-shrink-0 w-12 h-12 relative"
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <rect width="48" height="48" rx="24" fill="#DBF8FF"></rect>
+              <path
+                d="M31.633 19.997C31.646 20.172 31.646 20.346 31.646 20.52C31.646 25.845 27.593 31.981 20.186 31.981C17.904 31.981 15.784 31.32 14 30.172C14.324 30.209 14.636 30.222 14.973 30.222C16.856 30.222 18.589 29.586 19.974 28.501C18.203 28.464 16.719 27.304 16.207 25.708C16.456 25.745 16.706 25.77 16.968 25.77C17.329 25.77 17.692 25.72 18.029 25.633C16.182 25.259 14.799 23.638 14.799 21.68V21.63C15.336 21.929 15.959 22.116 16.619 22.141C15.534 21.419 14.823 20.184 14.823 18.787C14.823 18.039 15.022 17.353 15.371 16.755C17.354 19.198 20.335 20.795 23.677 20.97C23.615 20.67 23.577 20.359 23.577 20.047C23.577 17.827 25.373 16.019 27.605 16.019C28.765 16.019 29.812 16.505 30.548 17.291C31.458 17.116 32.33 16.779 33.104 16.318C32.805 17.253 32.168 18.039 31.333 18.538C32.144 18.45 32.93 18.226 33.652 17.914C33.104 18.712 32.419 19.423 31.633 19.997Z"
+                fill="#019FC4"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[200px] relative gap-6"
+        >
+          <p
+            class="flex-grow-0 flex-shrink-0 text-sm font-bold text-left text-[#7a7a7b]"
+          >
+            Services
+          </p>
+          <div
+            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              Video Course Online
+            </p>
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              Bootcamp
+            </p>
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              Specialized Bootcamp
+            </p>
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              Mentoring
+            </p>
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              For Business
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[200px] relative gap-6"
+        >
+          <p
+            class="flex-grow-0 flex-shrink-0 text-sm font-bold text-left text-[#7a7a7b]"
+          >
+            Pages
+          </p>
+          <div
+            class="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative gap-4"
+          >
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              Home
+            </p>
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              About Us
+            </p>
+            <p
+              class="flex-grow-0 flex-shrink-0 text-sm font-semibold text-left text-[#019fc4]"
+            >
+              Blog
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-6"
+      >
+        <svg
+          width="1024"
+          height="1"
+          viewBox="0 0 1024 1"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="self-stretch flex-grow-0 flex-shrink-0"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <line y1="0.5" x2="1024" y2="0.5" stroke="#F3F2EF"></line>
+        </svg>
+        <p
+          class="self-stretch flex-grow-0 flex-shrink-0 w-[1024px] text-sm text-center text-[#595959]"
+        >
+          Copyright © 2021. PT Dibimbing Digital Indonesia. All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
