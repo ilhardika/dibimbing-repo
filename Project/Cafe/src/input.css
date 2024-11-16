@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-font1 text-text-100;
+  @apply scroll-smooth font-font1 text-text-100;
 }
 
 .nav-link {
@@ -25,5 +25,21 @@ body {
 }
 
 .card-service {
-  @apply bg-primary-100 flex rounded-xl p-8 text-white;
+  @apply flex rounded-xl bg-primary-100 p-8 text-white;
+}
+
+.card-product {
+  @apply w-1/5 rounded-xl bg-accent-200 text-center text-2xl font-medium text-white;
+}
+
+.card-testimony {
+  @apply rounded-lg bg-primary-300 p-6 shadow-lg;
+}
+
+.responsive-header {
+  @apply sm:text-2xl md:text-3xl;
+}
+
+.responsive-paragraph {
+  @apply sm:text-sm;
 }
