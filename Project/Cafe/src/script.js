@@ -1,10 +1,10 @@
 // // JavaScript for Hamburger Toggle
-// const hamburger = document.getElementById("hamburger");
-// const mobileMenu = document.getElementById("mobile-menu");
+  const menuToggle = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-// hamburger.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("hidden");
-//   mobileMenu.classList.toggle("flex");
+  menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 // });
 
 // fade in

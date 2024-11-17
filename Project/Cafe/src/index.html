@@ -5,13 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
     <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
-      integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <title>Brew Space</title>
   </head>
   <body>
@@ -29,8 +23,28 @@
           >
         </div>
 
+        <!-- Hamburger Icon -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-primary-100 focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
         <!-- Navigation Links -->
-        <div class="">
+        <div class="hidden md:block">
           <ul class="flex items-center justify-between gap-5">
             <li>
               <a href="#services" class="nav-link text-lg">Services</a>
@@ -44,6 +58,23 @@
           </ul>
         </div>
       </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden px-4 md:hidden">
+        <ul
+          class="flex flex-col items-end justify-center gap-5 bg-primary-300 py-4"
+        >
+          <li>
+            <a href="#services" class="nav-link text-lg">Services</a>
+          </li>
+          <li>
+            <a href="#product" class="nav-link text-lg">Product</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="nav-link text-lg">Testimonial</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- hero -->
