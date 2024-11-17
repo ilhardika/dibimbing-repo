@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="smooth-scroll">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="sticky top-0 border bg-primary-300 drop-shadow">
+    <header class="sticky top-0 z-50 border bg-primary-300 drop-shadow">
       <nav
         class="mx-auto flex w-11/12 items-center justify-between py-4 md:container"
       >
@@ -29,8 +29,8 @@
           >
         </div>
 
-        <!-- Desktop Navigation Links -->
-        <div class="hidden md:flex">
+        <!-- Navigation Links -->
+        <div class="">
           <ul class="flex items-center justify-between gap-5">
             <li>
               <a href="#services" class="nav-link text-lg">Services</a>
@@ -43,31 +43,7 @@
             </li>
           </ul>
         </div>
-
-        <!-- Hamburger Icon for Mobile -->
-        <div class="md:hidden">
-          <button id="hamburger" class="text-lg">
-            <i class="ri-menu-line"></i>
-          </button>
-        </div>
       </nav>
-
-      <!-- Mobile Navigation Links -->
-      <div id="mobile-menu" class="hidden md:hidden">
-        <ul
-          class="flex flex-col items-start justify-center gap-5 bg-primary-300 py-4"
-        >
-          <li>
-            <a href="#services" class="nav-link ml-4 text-lg">Services</a>
-          </li>
-          <li>
-            <a href="#product" class="nav-link ml-4 text-lg">Product</a>
-          </li>
-          <li>
-            <a href="#testimonial" class="nav-link ml-4 text-lg">Testimonial</a>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <!-- hero -->
@@ -112,18 +88,11 @@
         <!-- services container -->
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <!-- service items -->
-          <div
-            class="card-service flex translate-y-4 flex-col items-center opacity-0 transition-opacity transition-transform duration-500 md:flex-row"
-            id="service-1"
-          >
-            <img
-              src="../img/about (1).png"
-              alt=""
-              class="mb-4 w-1/4 md:mb-0 md:mr-4"
-            />
-            <div class="flex flex-col">
+          <div class="card-service" id="service-1">
+            <img src="../img/about (1).png" alt="" class="mb-4 w-1/4 w-full" />
+            <div class="flex flex-col justify-around">
               <h4
-                class="responsive-header text-center text-xl font-semibold md:text-left"
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
               >
                 Precision in Every Roast
               </h4>
@@ -134,18 +103,11 @@
             </div>
           </div>
           <!-- service items -->
-          <div
-            class="card-service flex translate-y-4 flex-col items-center opacity-0 transition-opacity transition-transform duration-500 md:flex-row"
-            id="service-2"
-          >
-            <img
-              src="../img/about (2).png"
-              alt=""
-              class="mb-4 w-1/4 md:mb-0 md:mr-4"
-            />
-            <div class="flex flex-col">
+          <div class="card-service" id="service-2">
+            <img src="../img/about (2).png" alt="" class="mb-4 w-1/4 w-full" />
+            <div class="flex flex-col justify-around">
               <h4
-                class="responsive-header text-center text-xl font-semibold md:text-left"
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
               >
                 From Farm to Cup with Purpose
               </h4>
@@ -156,18 +118,11 @@
             </div>
           </div>
           <!-- service items -->
-          <div
-            class="card-service flex translate-y-4 flex-col items-center opacity-0 transition-opacity transition-transform duration-500 md:flex-row"
-            id="service-3"
-          >
-            <img
-              src="../img/about (3).png"
-              alt=""
-              class="mb-4 w-1/4 md:mb-0 md:mr-4"
-            />
-            <div class="flex flex-col">
+          <div class="card-service" id="service-3">
+            <img src="../img/about (3).png" alt="" class="mb-4 w-1/4 w-full" />
+            <div class="flex flex-col justify-around">
               <h4
-                class="responsive-header text-center text-xl font-semibold md:text-left"
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
               >
                 The Art of Coffee Brewing
               </h4>
@@ -178,17 +133,10 @@
             </div>
           </div>
           <!-- service items -->
-          <div
-            class="card-service flex translate-y-4 flex-col items-center opacity-0 transition-opacity transition-transform duration-500 md:flex-row"
-            id="service-4"
-          >
-            <img
-              src="../img/about (4).png"
-              alt=""
-              class="mb-4 w-1/4 md:mb-0 md:mr-4"
-            />
-            <div class="flex flex-col">
-              <h4 class="text-center text-xl font-semibold md:text-left">
+          <div class="card-service" id="service-4">
+            <img src="../img/about (4).png" alt="" class="mb-4 w-1/4 w-full" />
+            <div class="flex flex-col justify-around">
+              <h4 class="text-2lg text-center font-semibold md:text-left">
                 More Than Just Coffee
               </h4>
               <p class="text-center md:text-left">
@@ -217,7 +165,7 @@
         </div>
 
         <!-- product -->
-        <div class="-mx-2 flex flex-wrap justify-between gap-4">
+        <div class="flex flex-wrap justify-between gap-4">
           <!-- product items -->
           <div class="card-product">
             <img src="../img/product (4).png" alt="" />
@@ -294,9 +242,7 @@
           </div>
 
           <!-- Feedback Section -->
-          <div
-            class="rounded-lg bg-primary-300 p-6 text-primary-100 shadow-lg md:w-1/2"
-          >
+          <div class="rounded-lg bg-primary-300 p-6 shadow-lg md:w-1/2">
             <h3 class="mb-4 text-center text-xl font-semibold">
               Your Feedback Matters
             </h3>
@@ -329,40 +275,6 @@
         </div>
       </div>
     </section>
-
-    <div class="-mx-2 flex flex-wrap">
-      <!-- Card 1 -->
-      <div class="card-product">
-        <img src="../img/product (4).png" alt="" />
-        <div class="p-5">
-          <h4 class="text-center sm:text-xl md:text-2xl">Espresso</h4>
-        </div>
-      </div>
-
-      <!-- Card 1 -->
-      <div class="card-product">
-        <img src="../img/product (4).png" alt="" />
-        <div class="p-5">
-          <h4 class="text-center sm:text-xl md:text-2xl">Espresso</h4>
-        </div>
-      </div>
-
-      <!-- Card 1 -->
-      <div class="card-product">
-        <img src="../img/product (4).png" alt="" />
-        <div class="p-5">
-          <h4 class="text-center sm:text-xl md:text-2xl">Espresso</h4>
-        </div>
-      </div>
-
-      <!-- Card 1 -->
-      <div class="card-product">
-        <img src="../img/product (4).png" alt="" />
-        <div class="p-5">
-          <h4 class="text-center sm:text-xl md:text-2xl">Espresso</h4>
-        </div>
-      </div>
-    </div>
 
     <script src="script.js"></script>
   </body>

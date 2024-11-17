@@ -1,11 +1,11 @@
-// JavaScript for Hamburger Toggle
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobile-menu");
+// // JavaScript for Hamburger Toggle
+// const hamburger = document.getElementById("hamburger");
+// const mobileMenu = document.getElementById("mobile-menu");
 
-hamburger.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-  mobileMenu.classList.toggle("flex"); // Add this line to show the menu when toggled
-});
+// hamburger.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("hidden");
+//   mobileMenu.classList.toggle("flex");
+// });
 
 // fade in
 document.addEventListener("DOMContentLoaded", function () {
