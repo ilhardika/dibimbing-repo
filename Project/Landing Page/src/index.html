@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Web</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <section
+      id="navbar"
+      class="w-full sticky bg-gray-100 flex items-center p-4"
+    >
+      <!-- Navbar Wrapper -->
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div>
+          <img src="../img/logo.png" alt="Logo" />
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="md:hidden flex items-center">
+          <button id="hamburger" class="focus:outline-none">
+            <svg
+              class="w-6 h-6 text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Nav Menu -->
+        <nav id="nav-menu" class="hidden md:flex items-center gap-12">
+          <a href="#" class="text-base font-medium text-gray-800">Home</a>
+          <a href="#" class="text-base text-gray-800">Service</a>
+          <a href="#" class="text-base text-gray-800">Feature</a>
+          <a href="#" class="text-base text-gray-800">Product</a>
+          <a href="#" class="text-base text-gray-800">Testimonial</a>
+          <a href="#" class="text-base text-gray-800">FAQ</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden flex flex-col items-center devide-y-2 devide-slate-800 w-full gap-4 bg-gray-100"
+    >
+      <a href="#" class="text-base font-medium text-gray-800 py-2">Home</a>
+      <a href="#" class="text-base text-gray-800 py-2">Service</a>
+      <a href="#" class="text-base text-gray-800 py-2">Feature</a>
+      <a href="#" class="text-base text-gray-800 py-2">Product</a>
+      <a href="#" class="text-base text-gray-800 py-2">Testimonial</a>
+      <a href="#" class="text-base text-gray-800 py-2">FAQ</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="w-full bg-gray-100 p-4">
+      <!-- Hero Wrapper -->
+      <div
+        class="container mx-auto flex flex-col-reverse items-center lg:flex-row justify-around"
+      >
+        <!-- Hero Content -->
+        <div class="flex flex-col justify-start items-start gap-8 lg:w-1/2">
+          <div class="flex flex-col justify-start items-start gap-4">
+            <h1 class="text-5xl font-semibold text-left text-gray-700">
+              <span>Lessons and insights</span>
+              <span class="text-green-500">from 8 years</span>
+            </h1>
+            <p class="text-base text-left text-gray-600">
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+          </div>
+          <div
+            class="flex justify-center items-center px-8 py-3 rounded bg-green-500"
+          >
+            <p class="text-base font-medium text-center text-white">Register</p>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="w-3/4 lg:w-1/3 mt-8 lg:mt-0">
+          <img src="../img/hero.png" alt="Hero Image" class="w-full h-auto" />
+        </div>
+      </div>
+    </section>
+
+    <!-- script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
