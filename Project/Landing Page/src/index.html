@@ -4,27 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <title>Web</title>
+    <title>Landing Page</title>
   </head>
 
   <body>
     <!-- Navbar -->
-    <section
-      id="navbar"
-      class="w-full sticky bg-gray-100 flex items-center p-4"
-    >
-      <!-- Navbar Wrapper -->
-      <div class="container mx-auto flex justify-between items-center">
+    <div class="w-full h-20 sticky top-0 bg-gray-100 shadow z-50">
+      <div
+        class="container mx-auto flex justify-between items-center h-full px-4"
+      >
         <!-- Logo -->
-        <div>
-          <img src="../img/logo.png" alt="Logo" />
+        <div class="flex items-center">
+          <img src="../img/logo.svg" alt="Logo" class="size-24 lg:size-32" />
         </div>
-
-        <!-- Hamburger Icon -->
-        <div class="md:hidden flex items-center">
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
           <button id="hamburger" class="focus:outline-none">
             <svg
-              class="w-6 h-6 text-gray-800"
+              class="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -39,65 +36,487 @@
             </svg>
           </button>
         </div>
-
-        <!-- Nav Menu -->
-        <nav id="nav-menu" class="hidden md:flex items-center gap-12">
-          <a href="#" class="text-base font-medium text-gray-800">Home</a>
-          <a href="#" class="text-base text-gray-800">Service</a>
-          <a href="#" class="text-base text-gray-800">Feature</a>
-          <a href="#" class="text-base text-gray-800">Product</a>
-          <a href="#" class="text-base text-gray-800">Testimonial</a>
-          <a href="#" class="text-base text-gray-800">FAQ</a>
+        <!-- Nav Links -->
+        <nav id="nav-links" class="hidden md:flex space-x-8">
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Service</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Feature</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Product</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Testimonial</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >FAQ</a
+          >
         </nav>
       </div>
-    </section>
-
-    <!-- Mobile Menu -->
-    <div
-      id="mobile-menu"
-      class="hidden md:hidden flex flex-col items-center devide-y-2 devide-slate-800 w-full gap-4 bg-gray-100"
-    >
-      <a href="#" class="text-base font-medium text-gray-800 py-2">Home</a>
-      <a href="#" class="text-base text-gray-800 py-2">Service</a>
-      <a href="#" class="text-base text-gray-800 py-2">Feature</a>
-      <a href="#" class="text-base text-gray-800 py-2">Product</a>
-      <a href="#" class="text-base text-gray-800 py-2">Testimonial</a>
-      <a href="#" class="text-base text-gray-800 py-2">FAQ</a>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden">
+        <nav class="flex flex-col space-y-2 p-4 bg-gray-100 hidden">
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Service</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Feature</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Product</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >Testimonial</a
+          >
+          <a
+            href="#"
+            class="text-base font-medium text-gray-800 hover:text-gray-600"
+            >FAQ</a
+          >
+        </nav>
+      </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="w-full bg-gray-100 p-4">
-      <!-- Hero Wrapper -->
-      <div
-        class="container mx-auto flex flex-col-reverse items-center lg:flex-row justify-around"
-      >
-        <!-- Hero Content -->
-        <div class="flex flex-col justify-start items-start gap-8 lg:w-1/2">
-          <div class="flex flex-col justify-start items-start gap-4">
-            <h1 class="text-5xl font-semibold text-left text-gray-700">
-              <span>Lessons and insights</span>
-              <span class="text-green-500">from 8 years</span>
-            </h1>
-            <p class="text-base text-left text-gray-600">
-              Where to grow your business as a photographer: site or social
-              media?
-            </p>
-          </div>
-          <div
-            class="flex justify-center items-center px-8 py-3 rounded bg-green-500"
-          >
-            <p class="text-base font-medium text-center text-white">Register</p>
-          </div>
+    <!-- Hero -->
+    <div
+      class="flex flex-col-reverse md:flex-row justify-between items-center px-7 md:px-20 py-24 bg-gray-100"
+    >
+      <!-- Hero Content -->
+      <div class="flex flex-col justify-start items-start gap-8 md:w-2/3">
+        <div class="flex flex-col justify-start items-start gap-4">
+          <h1 class="text-4xl md:text-5xl font-semibold text-gray-800">
+            <span class="text-gray-600">Lessons and insights </span>
+            <span class="text-green-600">from 8 years</span>
+          </h1>
+          <p class="text-base text-gray-600">
+            Where to grow your business as a photographer: site or social media?
+          </p>
         </div>
-
-        <!-- Hero Image -->
-        <div class="w-3/4 lg:w-1/3 mt-8 lg:mt-0">
-          <img src="../img/hero.png" alt="Hero Image" class="w-full h-auto" />
+        <div
+          class="flex justify-center items-center px-8 py-3 rounded bg-green-600"
+        >
+          <p class="text-base font-medium text-center text-white">Register</p>
         </div>
       </div>
-    </section>
+      <!-- Hero Image -->
+      <img
+        src="../img/hero.svg"
+        alt="Hero Image"
+        class="mt-8 md:mt-0 md:w-1/3"
+      />
+    </div>
 
-    <!-- script -->
+    <!-- Clients -->
+    <div class="flex flex-col items-center gap-4 px-4 md:px-36 my-20">
+      <!-- Clients Heading -->
+      <div class="flex flex-col items-center gap-2">
+        <h2 class="text-3xl font-semibold text-center text-gray-600">
+          Our Clients
+        </h2>
+        <p class="text-base text-center text-gray-500">
+          We have been working with some Fortune 500+ clients
+        </p>
+      </div>
+      <!-- Clients Logos -->
+      <div class="flex flex-wrap justify-center items-center gap-16">
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+        <img
+          src="../img/client.svg"
+          alt="Client Logo"
+          class="size-20 md:size-14"
+        />
+      </div>
+    </div>
+
+    <!-- Community -->
+    <div class="flex flex-col items-center px-4 md:px-0 my-20">
+      <!-- Community Heading -->
+      <div class="text-center max-w-2xl mb-12">
+        <h2 class="text-3xl font-semibold text-center text-gray-600">
+          Manage your entire community in a single system
+        </h2>
+        <p class="text-base text-gray-500 mt-5">
+          Who is Nextcent suitable for?
+        </p>
+      </div>
+
+      <!-- Community Cards -->
+      <div
+        class="flex flex-col md:flex-row justify-center gap-8 w-full max-w-screen-xl px-4 md:px-36"
+      >
+        <!-- Card 1 -->
+        <div
+          class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+        >
+          <div class="flex flex-col items-center mb-4">
+            <img
+              src="../img/community.svg"
+              alt="Membership Organisations"
+              class="mb-4"
+            />
+            <h3 class="text-2xl font-bold text-gray-700 text-center">
+              Membership Organisations
+            </h3>
+          </div>
+          <p class="text-sm text-center text-gray-500 max-w-xs">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+        >
+          <div class="flex flex-col items-center mb-4">
+            <img
+              src="../img/community.svg"
+              alt="Membership Organisations"
+              class="mb-4"
+            />
+            <h3 class="text-2xl font-bold text-gray-700 text-center">
+              Membership Organisations
+            </h3>
+          </div>
+          <p class="text-sm text-center text-gray-500 max-w-xs">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="flex flex-col items-center p-6 bg-white rounded-lg shadow-md transition-all duration-300 hover:shadow-xl"
+        >
+          <div class="flex flex-col items-center mb-4">
+            <img
+              src="../img/community.svg"
+              alt="Membership Organisations"
+              class="mb-4"
+            />
+            <h3 class="text-2xl font-bold text-gray-700 text-center">
+              Membership Organisations
+            </h3>
+          </div>
+          <p class="text-sm text-center text-gray-500 max-w-xs">
+            Our membership management software provides full automation of
+            membership renewals and payments
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Unlock -->
+    <div class="container mx-auto px-4 lg:px-36 py-16 my-20">
+      <div
+        class="flex flex-col lg:flex-row items-center justify-between space-x-0 lg:space-x-16"
+      >
+        <!-- Unlock Image -->
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img
+            src="../img/unlock.svg"
+            alt="Pixelgrade Experience"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+
+        <!-- Unlock Content -->
+        <div class="w-full lg:w-1/2 space-y-8">
+          <div class="space-y-4">
+            <h2 class="text-3xl lg:text-4xl font-semibold text-gray-700">
+              The unseen of spending three years at Pixelgrade
+            </h2>
+            <p class="text-base text-gray-500 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+          </div>
+
+          <button
+            class="bg-green-500 text-white px-8 py-3.5 rounded hover:bg-green-600 transition-colors"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="bg-gray-100 py-16">
+      <div
+        class="container mx-auto px-4 lg:px-36 flex flex-col lg:flex-row justify-between items-center"
+      >
+        <!-- Achievements Content -->
+        <div class="flex flex-col w-full lg:w-1/2 mb-8 lg:mb-0">
+          <h2 class="text-4xl font-semibold text-left">
+            <span class="text-gray-700">Helping a local </span>
+            <span class="text-green-500">business reinvent itself</span>
+          </h2>
+          <p class="text-base text-left text-gray-800 mt-2">
+            We reached here with our hard work and dedication
+          </p>
+        </div>
+
+        <!-- Achievements Counts -->
+        <div class="w-full lg:w-1/2">
+          <div class="grid grid-cols-2 gap-8">
+            <!-- Achievement Item 1 -->
+            <div class="flex items-center gap-4">
+              <img
+                src="../img/achievments.svg"
+                alt="Members Icon"
+                class="w-12 h-12"
+              />
+              <div class="flex flex-col">
+                <p class="text-2xl font-bold text-gray-700">2,245,341</p>
+                <p class="text-base text-gray-500">Members</p>
+              </div>
+            </div>
+
+            <!-- Achievement Item 2 -->
+            <div class="flex items-center gap-4">
+              <img
+                src="../img/achievments.svg"
+                alt="Clubs Icon"
+                class="w-12 h-12"
+              />
+              <div class="flex flex-col">
+                <p class="text-2xl font-bold text-gray-700">46,328</p>
+                <p class="text-base text-gray-500">Clubs</p>
+              </div>
+            </div>
+
+            <!-- Achievement Item 3 -->
+            <div class="flex items-center gap-4">
+              <img
+                src="../img/achievments.svg"
+                alt="Event Bookings Icon"
+                class="w-12 h-12"
+              />
+              <div class="flex flex-col">
+                <p class="text-2xl font-bold text-gray-700">828,867</p>
+                <p class="text-base text-gray-500">Event Bookings</p>
+              </div>
+            </div>
+
+            <!-- Achievement Item 4 -->
+            <div class="flex items-center gap-4">
+              <img
+                src="../img/achievments.svg"
+                alt="Payments Icon"
+                class="w-12 h-12"
+              />
+              <div class="flex flex-col">
+                <p class="text-2xl font-bold text-gray-700">1,926,436</p>
+                <p class="text-base text-gray-500">Payments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service -->
+    <div class="container mx-auto px-4 lg:px-36 py-16 my-20">
+      <div
+        class="flex flex-col lg:flex-row items-center justify-between space-x-0 lg:space-x-16"
+      >
+        <!-- Service Image -->
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img
+            src="../img/service.svg"
+            alt="Pixelgrade Experience"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+
+        <!-- Service Content -->
+        <div class="w-full lg:w-1/2 space-y-8">
+          <div class="space-y-4">
+            <h2 class="text-3xl lg:text-4xl font-semibold text-gray-700">
+              How to design your site footer like we did
+            </h2>
+            <p class="text-base text-gray-500 leading-relaxed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+          </div>
+
+          <button
+            class="bg-green-500 text-white px-8 py-3.5 rounded hover:bg-green-600 transition-colors"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial -->
+    <div class="bg-gray-100 py-16 px-4 lg:px-36">
+      <div
+        class="container mx-auto flex flex-col lg:flex-row items-center gap-12"
+      >
+        <!-- Customer Image -->
+        <div class="w-full lg:w-1/3 flex justify-center">
+          <img
+            src="../img/customer.svg"
+            alt="Customer Testimonial"
+            class="w-[326px] h-[326px] rounded-lg object-cover shadow-lg"
+          />
+        </div>
+
+        <!-- Customer Content -->
+        <div class="w-full lg:w-2/3 space-y-8">
+          <!-- Testimonial Text -->
+          <p class="text-base text-gray-600 leading-relaxed">
+            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+            lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+            enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+            enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
+            at ligula molestie, nec molestie mi blandit.
+          </p>
+
+          <!-- Customer Details -->
+          <div class="space-y-2">
+            <p class="text-xl font-semibold text-green-500">Tim Smith</p>
+            <p class="text-base text-gray-500">
+              British Dragon Boat Racing Association
+            </p>
+          </div>
+
+          <!-- Customer Logos and Link -->
+          <div class="flex flex-col lg:flex-row justify-between items-center">
+            <!-- Client Logos -->
+            <div
+              class="flex flex-wrap justify-center items-center gap-8 mb-4 lg:mb-0"
+            >
+              <img
+                src="../img/client.svg"
+                alt="Client Logo"
+                class="h-8 w-auto"
+              />
+              <img
+                src="../img/client.svg"
+                alt="Client Logo"
+                class="h-8 w-auto"
+              />
+              <img
+                src="../img/client.svg"
+                alt="Client Logo"
+                class="h-8 w-auto"
+              />
+              <img
+                src="../img/client.svg"
+                alt="Client Logo"
+                class="h-8 w-auto"
+              />
+              <img
+                src="../img/client.svg"
+                alt="Client Logo"
+                class="h-8 w-auto"
+              />
+              <img
+                src="../img/client.svg"
+                alt="Client Logo"
+                class="h-8 w-auto"
+              />
+            </div>
+
+            <!-- Meet All Customers Link -->
+            <a
+              href="#"
+              class="flex items-center text-green-500 hover:text-green-600 transition-colors"
+            >
+              <span class="text-lg font-semibold mr-2">Meet all customers</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+
     <script src="./script.js"></script>
   </body>
 </html>
