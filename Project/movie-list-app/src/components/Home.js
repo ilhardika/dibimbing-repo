@@ -9,7 +9,7 @@ const Home = ({ movies }) => {
   };
 
   return (
-    <div className=" bg-dark text-white">
+    <div>
       {/* Hero Section */}
       <header className="bg-dark text-white py-5 px-3">
         <div className="container">
@@ -17,9 +17,6 @@ const Home = ({ movies }) => {
           <p className="mb-3">
             Discover and enjoy the best movies from around the world.
           </p>
-          <a href="#" className="btn btn-secondary">
-            Explore Movies
-          </a>
         </div>
       </header>
 

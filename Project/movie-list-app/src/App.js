@@ -7,7 +7,6 @@ import MovieCRUD from "./components/MovieCRUD";
 const App = () => {
   const [movies, setMovies] = useState([]);
 
-  // Fetch popular movies from TMDb API
   useEffect(() => {
     const fetchMovies = async () => {
       try {
@@ -25,18 +24,43 @@ const App = () => {
   }, []);
 
   const addMovie = (movie) => {
-    // Menambahkan film baru di depan daftar film
     setMovies((prevMovies) => [movie, ...prevMovies]);
   };
 
+  const editMovie = (updatedMovie) => {
+    setMovies((prevMovies) =>
+      prevMovies.map((movie) =>
+        movie.id === updatedMovie.id ? updatedMovie : movie
+      )
+    );
+  };
+
+  const deleteMovie = (movieId) => {
+    setMovies((prevMovies) =>
+      prevMovies.filter((movie) => movie.id !== movieId)
+    );
+  };
+
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home movies={movies} />} />
-        <Route path="/crud" element={<MovieCRUD addMovie={addMovie} />} />
-      </Routes>
-    </Router>
+    <div className="bg-dark text-white">
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home movies={movies} />} />
+          <Route
+            path="/crud"
+            element={
+              <MovieCRUD
+                movies={movies}
+                addMovie={addMovie}
+                editMovie={editMovie}
+                deleteMovie={deleteMovie}
+              />
+            }
+          />
+        </Routes>
+      </Router>
+    </div>
   );
 };
 
