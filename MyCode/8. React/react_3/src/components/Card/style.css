@@ -1,0 +1,35 @@
+.card {
+  @apply w-[310px] shadow-md rounded-md;
+}
+
+.card-image {
+  @apply w-full;
+}
+
+.card-content {
+  @apply p-4 flex justify-between items-center;
+}
+
+.card-content-left {
+  @apply flex flex-col items-start;
+}
+
+.product-name {
+  @apply font-bold text-lg;
+}
+
+.product-description {
+  @apply text-gray-500;
+}
+
+.card-content-right {
+  @apply flex flex-col items-end;
+}
+
+.product-price {
+  @apply font-medium;
+}
+
+.product-colors {
+  @apply text-gray-500;
+}
