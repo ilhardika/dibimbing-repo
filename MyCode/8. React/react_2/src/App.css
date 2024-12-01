@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  @apply w-full bg-white py-4 px-16 flex justify-between items-center text-black;
+}
+
+.logo {
+  @apply flex items-center gap-2 text-2xl font-bold;
+}
+
+.nav-items {
+  @apply flex gap-16;
+}
+
+.social-icons {
+  @apply flex gap-8;
+}
