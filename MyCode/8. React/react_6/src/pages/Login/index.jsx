@@ -46,8 +46,7 @@ const Login = () => {
       console.log(res);
     } catch (error) {
       console.log("error", error.response); //ambil response error
-      setError(error.response.data.message);
-      console.log("error message", error.response.data.message); //ambil message error
+      setError(error.response.data.message); //ambil message error
     } finally {
       setLoading(false);
     }

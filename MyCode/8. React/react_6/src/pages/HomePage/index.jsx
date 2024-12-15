@@ -6,16 +6,35 @@ import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
+  const [skip, setSkip] = useState(0);
+  const limit = 3;
+
+  const getRecipes = async () => {
+    try {
+      const res = await axios.get(
+        `https://dummyjson.com/recipes?skip=${skip}&limit=${limit}`
+      );
+      setRecipes(res.data.recipes);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleNext = () => {
+    setSkip(skip + limit);
+  };
+
+  const handleBack = () => {
+    setSkip(skip - limit);
+  };
 
   useEffect(() => {
-    const fetchRecipes = async () => {
-      const res = await axios.get("https://dummyjson.com/recipes/");
-      console.log("res", res.data);
-      setRecipes(res.data.recipes);
-    };
-
-    fetchRecipes();
+    getRecipes();
   }, []);
+
+  useEffect(() => {
+    getRecipes();
+  }, [skip]);
 
   return (
     <div>
@@ -30,13 +49,14 @@ const HomePage = () => {
             className="border-2 border-gray-200 rounded-lg shadow-lg p-5 flex flex-col justify-between"
           >
             <div>
-              <h2 className="my-1 font-bold">{recipe.name}</h2>
-              <h2 className="my-1">Ingredients: </h2>
-              <ul className="list-disc ">
-                {recipe?.ingredients?.map((ingredient) => (
-                  <li className="ml-5">{ingredient}</li>
-                ))}
-              </ul>
+              <div className="flex flex-col gap-1 items-center">
+                <h2 className="my-1 font-bold">{recipe.name}</h2>
+                <img
+                  src={recipe.image}
+                  alt=""
+                  className="w-[75%] rounded-full"
+                />
+              </div>
               <p className="my-1">
                 Prep Time: {recipe.prepTimeMinutes} minutes
               </p>
@@ -45,7 +65,7 @@ const HomePage = () => {
               </p>
               <p className="my-1">Difficulty: {recipe.difficulty}</p>
             </div>
-            <div>
+            <div className="flex justify-center">
               <Link to={`/detail/${recipe.id}`}>
                 <button className="mt-5 bg-gray-800  text-white font-bold py-2 px-5 rounded-lg text-sm">
                   Detail Recipe
@@ -54,6 +74,23 @@ const HomePage = () => {
             </div>
           </div>
         ))}
+      </div>
+      {/* pagination */}
+      <div className="flex justify-center gap-5 my-10">
+        <button
+          disabled={skip === 0}
+          onClick={handleBack}
+          className="bg-gray-800 text-white text-sm font-bold py-2 px-5 rounded-lg"
+        >
+          Back
+        </button>
+        <button
+          disabled={recipes.length < limit}
+          onClick={handleNext}
+          className="bg-gray-800 text-white text-sm font-bold py-2 px-5 rounded-lg"
+        >
+          Next
+        </button>
       </div>
     </div>
   );
