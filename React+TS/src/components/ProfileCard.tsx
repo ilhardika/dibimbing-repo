@@ -1,33 +1,46 @@
 type ProfileCardProps = {
   name: string;
-  year?: number; // ? adalah optional
+  age?: number; // ? adalah optional
 };
 
 function ProfileCard(props: ProfileCardProps) {
-  // bisa juga didestructure, tidak pakai props. lagi di rendernya
-  // plusnya, kita bisa kasih default value seperti pada year
-  // const { name, year = 2000 } = props;
-
   return (
     <div
       style={{
-        border: "1px solid black",
-        padding: "10px",
-        width: "200px",
+        border: "none",
+        borderRadius: "8px",
+        padding: "16px",
+        width: "220px",
+        backgroundColor: "#f8f9fa",
+        boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+        fontFamily: "Arial, sans-serif",
       }}
     >
-      {/* kasih default value pakai || juga bisa kalau tanpa destructure */}
-      <p>name: {props.name || "nama orang"}</p>
+      <h3
+        style={{
+          margin: "0 0 8px 0",
+          color: "#333",
+          fontSize: "18px",
+        }}
+      >
+        {props.name || "nama orang"}
+      </h3>
 
-      {/*
-      if ternary
-      bisa pakai opsi 1 seperti opsi 1,
-      null artinya tidak render 
-      atau lebih singkatnya bisa pakai && seperti opsi 2, bacanya sama saja
-      */}
-
-      {/* {props.year ? <p>year : {props.year}</p> : null} */}
-      {props.year && <p>year: {props.year}</p>}
+      {props.age && (
+        <p
+          style={{
+            margin: "0",
+            color: "#666",
+            fontSize: "14px",
+            backgroundColor: "#e9ecef",
+            padding: "4px 8px",
+            borderRadius: "4px",
+            display: "inline-block",
+          }}
+        >
+          Usia: {props.age}
+        </p>
+      )}
     </div>
   );
 }
