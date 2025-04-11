@@ -17,33 +17,22 @@ const teachers: Teacher[] = [
 
 function App() {
   return (
-    <div
-      style={{
-        padding: "20px",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <h1
-        style={{
-          color: "#333",
-          marginBottom: "20px",
-          borderBottom: "2px solid #ddd",
-          paddingBottom: "10px",
-        }}
-      >
-        Daftar Dosen
-      </h1>
+    <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
+      <h1 style={{ marginBottom: "20px" }}>Komponen & Props</h1>
 
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "16px",
-        }}
-      >
-        {teachers.map((teacher, index) => (
-          <ProfileCard name={teacher.name} age={teacher.age} key={index} />
-        ))}
+      <div style={{ marginBottom: "30px" }}>
+        <h2 style={{ marginBottom: "15px" }}>Daftar Pengajar</h2>
+
+        <div style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}>
+          {teachers.map((teacher, index) => (
+            <ProfileCard name={teacher.name} age={teacher.age} key={index} />
+          ))}
+        </div>
+      </div>
+
+      <div>
+      <h1 style={{ marginBottom: "20px" }}>Komponen & Props</h1>
+        <p>Bagian ini akan diisi dengan content tentang State.</p>
       </div>
     </div>
   );
