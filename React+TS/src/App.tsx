@@ -1,3 +1,4 @@
+import Counter from "./components/Counter";
 import ProfileCard from "./components/ProfileCard";
 
 type Teacher = {
@@ -32,7 +33,8 @@ function App() {
 
       <div>
       <h1 style={{ marginBottom: "20px" }}>Komponen & Props</h1>
-        <p>Bagian ini akan diisi dengan content tentang State.</p>
+        <h2>Counter</h2>
+        <Counter />
       </div>
     </div>
   );
