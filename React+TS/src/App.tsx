@@ -25,6 +25,7 @@ function App() {
         <h2 style={{ marginBottom: "15px" }}>Daftar Pengajar</h2>
 
         <div style={{ display: "flex", gap: "15px", flexWrap: "wrap" }}>
+          {/* mapping array karna bisa di render */}
           {teachers.map((teacher, index) => (
             <ProfileCard name={teacher.name} age={teacher.age} key={index} />
           ))}
