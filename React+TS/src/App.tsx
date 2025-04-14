@@ -1,5 +1,6 @@
 import Counter from "./components/Counter";
 import ProfileCard from "./components/ProfileCard";
+import Like from "./components/Like";
 
 type Teacher = {
   name: string;
@@ -36,6 +37,8 @@ function App() {
       <h1 style={{ marginBottom: "20px" }}>Komponen & Props</h1>
         <h2>Counter</h2>
         <Counter />
+        <h2>Like</h2>
+        <Like />
       </div>
     </div>
   );
