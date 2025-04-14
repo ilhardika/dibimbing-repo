@@ -1,24 +1,9 @@
-import { useState } from "react";
+import { useCounter } from "../hooks/useCounter";
 
 const Counter = () => {
-  // buat state count dengan default 0
-  // var count (kiri) adalah var default dan setCount (kanan) adalah function untuk mengubah var count
-  const [count, setCount] = useState(0);
-
-  // buat function handler kurang
-  const handleDecrement = () => {
-    // ubah var count -1 dengan function setCount, dan rerender
-    setCount(count - 1);
-  };
-  // buat function handler tambah
-  const handleIncrement = () => {
-    // ubah var count +1 dengan function setCount, dan rerender
-    setCount(count + 1);
-  };
-
-  const handleReset = () => {
-    setCount(0);
-  };
+  // panggil custom hook useCounter
+  // destructuring var count dan function handler dari useCounter
+  const { count, handleDecrement, handleIncrement, handleReset } = useCounter();
 
   return (
     <div>
