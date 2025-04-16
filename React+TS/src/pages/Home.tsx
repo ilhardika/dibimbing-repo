@@ -44,6 +44,8 @@ function Home() {
       <h1>Routing</h1>
       {/* pakai link untuk Client Side Rendering */}
       <Link to="/product-detail">Product Detail</Link>
+      <br />
+      <Link to="/products">Product List</Link>
     </div>
   );
 }
