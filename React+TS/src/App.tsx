@@ -15,7 +15,7 @@ function App() {
         <Route path="/products" element={<ProductList />} />
         {/* pakai : untuk dynamic routing */}
         {/* productSlug itu parameter */}
-        <Route path="/product-detail/:productSlug" element={<ProductDetail />} />
+        <Route path="/product/:productSlug" element={<ProductDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

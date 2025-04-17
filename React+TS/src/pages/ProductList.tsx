@@ -24,7 +24,7 @@ function ProductList() {
       <button onClick={() => handleSort("popular")} >Sort Popular</button>
       <button onClick={() => handleSort("newest")} >Sort Newest</button>
       
-      {/* OPSI LAIN */}
+      {/* OPSI LAIN DROPDOWN */}
       {/* <select
         name="productSort"
         id="productSort"

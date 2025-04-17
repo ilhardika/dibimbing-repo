@@ -3,22 +3,24 @@ import ProfileCard from "../components/ProfileCard";
 import Like from "../components/Like";
 import { Link } from "react-router";
 
-type Teacher = {
-  name: string;
-  age?: number;
-};
-
-const teachers: Teacher[] = [
-  {
-    name: "dosen 1",
-  },
-  {
-    name: "dosen 2",
-    age: 25,
-  },
-];
-
 function Home() {
+
+
+  type Teacher = {
+    name: string;
+    age?: number;
+  };
+
+  const teachers: Teacher[] = [
+    {
+      name: "dosen 1",
+    },
+    {
+      name: "dosen 2",
+      age: 25,
+    },
+  ];
+
   return (
     <div style={{ padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
       <h1 style={{ marginBottom: "20px" }}>Komponen & Props</h1>
@@ -43,7 +45,7 @@ function Home() {
       </div>
       <h1>Routing</h1>
       {/* pakai link untuk Client Side Rendering */}
-      <Link to="/product-detail">Product Detail</Link>
+      <Link to={`/product/produk1`}>Product 1</Link>
       <br />
       <Link to="/products">Product List</Link>
     </div>
