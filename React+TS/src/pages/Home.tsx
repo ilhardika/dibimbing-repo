@@ -48,6 +48,8 @@ function Home() {
       <Link to={`/product/produk1`}>Product 1</Link>
       <br />
       <Link to="/products">Product List</Link>
+      <h2>Form</h2>
+      <Link to="/form">Form</Link>
     </div>
   );
 }
