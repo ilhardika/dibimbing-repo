@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import ProductDetail from "./pages/ProductDetail";
 import ProductList from "./pages/ProductList";
 import Form from "./pages/Form";
+import RHF from "./pages/RHF";
 
 function App() {
   return (
@@ -13,12 +14,13 @@ function App() {
       <Routes>
         {/* route path mana dan elemen apa */}
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/products" element={<ProductList />} />
         {/* pakai : untuk dynamic routing */}
         {/* productSlug itu parameter */}
         <Route path="/product/:productSlug" element={<ProductDetail />} />
-        <Route path="*" element={<NotFound />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/rhf" element={<RHF />} />
       </Routes>
     </>
   );

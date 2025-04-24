@@ -50,6 +50,8 @@ function Home() {
       <Link to="/products">Product List</Link>
       <h2>Form</h2>
       <Link to="/form">Form</Link>
+      <br />
+      <Link to="/rhf">react-hook-form</Link>
     </div>
   );
 }
