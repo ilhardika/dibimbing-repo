@@ -12,26 +12,44 @@ import { useState } from "react";
 
 // deklarasi validasi pakai zod object
 // setiap parameter merepresentasikan inputan yang ada di form
-const registerFormSchema = z.object({
-  // tipedata, kondisi, message
-  username: z.string().min(3, { message: "minimal 3 karakter" }),
-  email: z.string().email({ message: "Invalid email address" }),
-  password: z
-    .string()
-    .min(8, { message: "Password must be at least 8 characters long" })
-    .regex(/[A-Z]/, {
-      message: "Password must contain at least one uppercase letter",
-    })
-    .regex(/[0-9]/, { message: "Password must contain at least one number" }),
-  // pakai coerce untuk mengubah tipe data dari string ke number
-  // kalai number = value kalau string = panjang
-  age: z.coerce.number().min(18, { message: "minimal 18 tahun" }),
-});
+const registerFormSchema = z
+  .object({
+    // tipedata, kondisi, message
+    username: z.string().min(3, { message: "minimal 3 karakter" }),
+    email: z.string().email({ message: "Invalid email address" }),
+    password: z
+      .string()
+      .min(8, { message: "Password must be at least 8 characters long" })
+      .regex(/[A-Z]/, {
+        message: "Password must contain at least one uppercase letter",
+      })
+      .regex(/[0-9]/, { message: "Password must contain at least one number" }),
+    repeatPassword: z.string(),
+    // pakai coerce untuk mengubah tipe data dari string ke number
+    // kalai number = value kalau string = panjang
+    age: z.coerce.number().min(18, { message: "minimal 18 tahun" }),
+  })
+  .superRefine((data, ctx) => {
+    // superRefine untuk validasi yang lebih kompleks
+    if (data.password !== data.repeatPassword) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "Password tidak sama",
+        path: ["repeatPassword"],
+      });
+    }
+  });
 
 // infer dari zod object ke ts
 type RegisterFormSchema = z.infer<typeof registerFormSchema>;
 
 function RHF() {
+  const [showPassword, setShowPassword] = useState(false);
+  // State untuk menyimpan data yang sudah terdaftar, tipedata, array kosong
+  const [registeredUsers, setRegisteredUsers] = useState<RegisterFormSchema[]>(
+    []
+  );
+
   // berikan type yang sudah di deklarasi
   const form = useForm<RegisterFormSchema>(
     // apply zod resolber validatior dan tempelkan validasi dari registerFormSchema
@@ -41,11 +59,15 @@ function RHF() {
   // values ini adalah passing dari form.handleSubmit,
   // berikan type yang sudah di deklarasi
   const handleRegister = (values: RegisterFormSchema) => {
+    // tambahkan user baru ke registeredUsers array
+    setRegisteredUsers([...registeredUsers, values]);
+
     alert("Registered");
     console.log(values);
-  };
 
-  const [showPassword, setShowPassword] = useState(false);
+    // form reset
+    form.reset();
+  };
 
   return (
     <div>
@@ -81,6 +103,15 @@ function RHF() {
         </label>
 
         <label>
+          Repeat Password{" "}
+          <input
+            type={showPassword ? "text" : "password"}
+            {...form.register("repeatPassword")}
+          />
+        </label>
+        <span>{form.formState.errors.repeatPassword?.message}</span>
+
+        <label>
           Email <input type="email" {...form.register("email")} />
         </label>
         <span>{form.formState.errors.email?.message}</span>
@@ -93,6 +124,30 @@ function RHF() {
         {/* selama ada di alaman <form> tidak perlu tambahkan type submit */}
         <button>Register</button>
       </form>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Repeat Password</th>
+              <th>Email</th>
+              <th>Age</th>
+            </tr>
+          </thead>
+          <tbody>
+            {registeredUsers.map((user, index) => (
+              <tr key={index}>
+                <td>{user.username}</td>
+                <td>{user.password}</td>
+                <td>{user.repeatPassword}</td>
+                <td>{user.email}</td>
+                <td>{user.age}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
