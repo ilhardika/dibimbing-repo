@@ -44,7 +44,7 @@ const registerFormSchema = z
 type RegisterFormSchema = z.infer<typeof registerFormSchema>;
 
 function RHF() {
-  const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   // State untuk menyimpan data yang sudah terdaftar, tipedata, array kosong
   const [registeredUsers, setRegisteredUsers] = useState<RegisterFormSchema[]>(
     []
