@@ -43,17 +43,17 @@ const registerFormSchema = z
 // infer dari zod object ke ts
 type RegisterFormSchema = z.infer<typeof registerFormSchema>;
 
+// berikan type yang sudah di deklarasi
+const form = useForm<RegisterFormSchema>(
+  // apply zod resolber validatior dan tempelkan validasi dari registerFormSchema
+  { resolver: zodResolver(registerFormSchema) }
+);
+
 function RHF() {
   const [showPassword, setShowPassword] = useState<boolean>(false);
   // State untuk menyimpan data yang sudah terdaftar, tipedata, array kosong
   const [registeredUsers, setRegisteredUsers] = useState<RegisterFormSchema[]>(
     []
-  );
-
-  // berikan type yang sudah di deklarasi
-  const form = useForm<RegisterFormSchema>(
-    // apply zod resolber validatior dan tempelkan validasi dari registerFormSchema
-    { resolver: zodResolver(registerFormSchema) }
   );
 
   // values ini adalah passing dari form.handleSubmit,
