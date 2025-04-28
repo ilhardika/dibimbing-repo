@@ -4,8 +4,6 @@ import Like from "../components/Like";
 import { Link } from "react-router";
 
 function Home() {
-
-
   type Teacher = {
     name: string;
     age?: number;
@@ -43,6 +41,7 @@ function Home() {
         <h2>Like</h2>
         <Like />
       </div>
+
       <h1>Routing</h1>
       {/* pakai link untuk Client Side Rendering */}
       <Link to={`/product/produk1`}>Product 1</Link>
@@ -52,6 +51,9 @@ function Home() {
       <Link to="/form">Form</Link>
       <br />
       <Link to="/rhf">react-hook-form</Link>
+
+      <h1>Data Fetch</h1>
+      <Link to={"/employees"}>Employees Page</Link>
     </div>
   );
 }

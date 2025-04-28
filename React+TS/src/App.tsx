@@ -6,6 +6,7 @@ import ProductDetail from "./pages/ProductDetail";
 import ProductList from "./pages/ProductList";
 import Form from "./pages/Form";
 import RHF from "./pages/RHF";
+import Employees from "./pages/Employees";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/product/:productSlug" element={<ProductDetail />} />
         <Route path="/form" element={<Form />} />
         <Route path="/rhf" element={<RHF />} />
+        <Route path="/employees" element={<Employees />} />
       </Routes>
     </>
   );
