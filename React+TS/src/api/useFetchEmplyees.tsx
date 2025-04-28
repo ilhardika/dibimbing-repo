@@ -2,7 +2,7 @@ import { useState } from "react";
 import { axiosInstance } from "../lib/axios";
 
 type EmployeeSchema = {
-  id: number;
+  id: string;
   name: string;
   position: string;
   salary: number;
@@ -13,7 +13,7 @@ export function useFetchEmplyees() {
   const [fetchLoading, setFetchLoading] = useState<boolean>(false);
   const [fetchError, setFetchError] = useState<string>("");
 
-  const fetchEmployees = async () => {
+  const handleFetchEmployees = async () => {
     try {
       setFetchLoading(true); //toggle on
 
@@ -40,6 +40,6 @@ export function useFetchEmplyees() {
     employees,
     fetchLoading,
     fetchError,
-    fetchEmployees,
+    handleFetchEmployees,
   };
 }

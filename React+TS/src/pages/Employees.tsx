@@ -1,21 +1,30 @@
+// import { axiosInstance } from "../lib/axios";
 import { useFetchEmplyees } from "../api/useFetchEmplyees";
 import { useCreateEmployees } from "../api/useCreateEmployees";
+import { useDeleteEmployee } from "../api/useDeleteEmployee";
 import { useState } from "react";
-import { set } from "react-hook-form";
 
 function Employees() {
   const [inputValue, setInputValue] = useState<string>("");
 
-  const { employees, fetchLoading, fetchError, fetchEmployees } =
+  const { employees, fetchLoading, fetchError, handleFetchEmployees } =
     useFetchEmplyees();
 
   const { createLoading, createError, handleCreateEmployee } =
     useCreateEmployees();
 
+  const { deleteLoading, deleteError, handleDeleteEmployee } =
+    useDeleteEmployee();
+
   const handleBtnCraeateEmployee = async () => {
     await handleCreateEmployee(inputValue);
-    fetchEmployees();
+    handleFetchEmployees();
     setInputValue(""); //reset inputValue
+  };
+
+  const handleBtnDeleteEmployee = async (id: string) => {
+    await handleDeleteEmployee(id);
+    handleFetchEmployees();
   };
 
   return (
@@ -51,7 +60,11 @@ function Employees() {
               <td>{employee.position}</td>
               <td>{employee.salary}</td>
               <td>
-                <button>Delete</button>
+                <button onClick={() => handleBtnDeleteEmployee(employee.id)}>
+                  Delete
+                </button>
+                {deleteLoading && <p>Deleting Employee...</p>}
+                {deleteError && <p style={{ color: "red" }}>{deleteError}</p>}
               </td>
             </tr>
           ))}
@@ -60,7 +73,7 @@ function Employees() {
       {fetchLoading && <p>FetchLoading...</p>}
       {fetchError && <p style={{ color: "red" }}>{fetchError}</p>}
       {/* button disable ketika fetchLoading true */}
-      <button disabled={fetchLoading} onClick={fetchEmployees}>
+      <button disabled={fetchLoading} onClick={handleFetchEmployees}>
         Fecth Employees
       </button>
     </div>
