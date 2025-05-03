@@ -16,6 +16,7 @@
                         <tr>
                             <th scope="col" width="5%">#</th>
                             <th scope="col" width="45%">Nama Produk</th>
+                            <th scope="col" width="25%">Stok</th>
                             <th scope="col" width="25%">Harga</th>
                             <th scope="col" width="25%">Aksi</th>
                         </tr>
@@ -25,6 +26,7 @@
                         <tr>
                             <td>1</td>
                             <td>Laptop Asus ROG</td>
+                            <td>10</td>
                             <td>Rp 15.000.000</td>
                             <td>
                                 <div class="d-flex gap-2">

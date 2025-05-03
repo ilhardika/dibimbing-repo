@@ -12,6 +12,10 @@
                         <input type="text" class="form-control bg-dark text-light border-secondary" id="productName" placeholder="Masukkan nama produk">
                     </div>
                     <div class="mb-3">
+                        <label for="productPrice" class="form-label">Stock (Pcs)</label>
+                        <input type="number" class="form-control bg-dark text-light border-secondary" id="productPrice" placeholder="Masukkan harga produk">
+                    </div>
+                    <div class="mb-3">
                         <label for="productPrice" class="form-label">Harga (Rp)</label>
                         <input type="number" class="form-control bg-dark text-light border-secondary" id="productPrice" placeholder="Masukkan harga produk">
                     </div>
