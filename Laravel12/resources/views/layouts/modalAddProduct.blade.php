@@ -19,6 +19,10 @@
                         <label for="productPrice" class="form-label">Harga (Rp)</label>
                         <input type="number" class="form-control bg-dark text-light border-secondary" id="productPrice" placeholder="Masukkan harga produk">
                     </div>
+                    <div class="mb-3">
+                        <label for="productDescription" class="form-label">Deskripsi Produk</label>
+                        <textarea class="form-control bg-dark text-light border-secondary" id="productDescription" rows="3" placeholder="Masukkan deskripsi produk"></textarea>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer border-top border-secondary">
