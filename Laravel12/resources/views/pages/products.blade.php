@@ -18,16 +18,19 @@
                             <th scope="col" width="45%">Nama Produk</th>
                             <th scope="col" width="25%">Stok</th>
                             <th scope="col" width="25%">Harga</th>
+                            <th scope="col" width="25%">Description</th>
                             <th scope="col" width="25%">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- Contoh data (hanya untuk UI) -->
+                        <!-- Render data -->
+                        @foreach ($products as $product)
                         <tr>
-                            <td>1</td>
-                            <td>Laptop Asus ROG</td>
-                            <td>10</td>
-                            <td>Rp 15.000.000</td>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $product->name }}</td>
+                            <td>{{ $product->stock }}</td>
+                            <td>Rp.{{ number_format($product->price, 0, ',', '.') }}</td>
+                            <td>{{ Str::limit($product->description, 10, '...') }}</td>
                             <td>
                                 <div class="d-flex gap-2">
                                     <a href="#" class="btn btn-sm btn-outline-warning">
@@ -39,6 +42,8 @@
                                 </div>
                             </td>
                         </tr>
+                        @endforeach
+
                     </tbody>
                 </table>
             </div>
