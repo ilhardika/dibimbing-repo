@@ -12,11 +12,11 @@ Route::get('/', function () {
 // bisa pakai view, / ganti .
 Route::view('/about', 'pages.about');
 
-Route::get('user/', function() {
-    return view('pages.users');
+Route::get('products/', function() {
+    return view('pages.products');
 });
 
 // menangkap parameter id dan mengirimkannya ke view
-Route::get('user/{id}', function($id) {
-    return view('pages.userDetail', ['id' => $id]);
+Route::get('product/{id}', function($id) {
+    return view('pages.productDetail', ['id' => $id]);
 });

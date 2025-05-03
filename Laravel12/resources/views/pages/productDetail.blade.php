@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>about</h1>
+    <h5>detail product {{ $id }}</h5>
 @endsection
