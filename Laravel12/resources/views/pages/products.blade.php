@@ -5,9 +5,9 @@
         <div class="card-body p-4">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h4 class="fw-bold mb-0">Daftar Produk</h4>
-                <a href="#" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">
                     <i class="bi bi-plus-lg me-1"></i> Tambah Produk
-                </a>
+                </button>
             </div>
 
             <div class="table-responsive">
@@ -37,21 +37,12 @@
                                 </div>
                             </td>
                         </tr>
-
-                        <!-- Tampilan jika tidak ada produk (dinonaktifkan, hanya untuk referensi) -->
-                        <!-- 
-                        <tr>
-                            <td colspan="4" class="text-center py-4">
-                                <div class="d-flex flex-column align-items-center">
-                                    <i class="bi bi-inbox text-secondary" style="font-size: 2rem;"></i>
-                                    <p class="text-secondary mt-2 mb-0">Belum ada produk</p>
-                                </div>
-                            </td>
-                        </tr>
-                        -->
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+
+    <!-- Include Modal Tambah Produk -->
+    @include('layouts.modalAddProduct')
 @endsection

@@ -10,7 +10,7 @@
             <a class="nav-link px-3 py-2 active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3 py-2" href="/about">About</a>
+            <a class="nav-link px-3 py-2" href="/about">Store</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-3 py-2" href="/products">Product</a>
