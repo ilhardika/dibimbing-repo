@@ -10,6 +10,13 @@
                 </button>
             </div>
 
+            @if (session('success'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
+        
             <div class="table-responsive">
                 <table class="table table-dark table-hover">
                     <thead>
@@ -51,5 +58,5 @@
     </div>
 
     <!-- Include Modal Tambah Produk -->
-    @include('layouts.modalAddProduct')
+    @include('layouts.modalCreateProduct')
 @endsection

@@ -24,7 +24,8 @@ Route::get('about', [AboutController::class,'index']);
 
 // PRODUCT
 Route::get('products', [ProductController::class,'index']);
-Route::get('products/add', [ProductController::class,'addProduct']);
+Route::post('products', [ProductController::class,'store']);
+Route::get('products/create', [ProductController::class,'createProduct']);
 
 
 // PRODUCT DETAIL
