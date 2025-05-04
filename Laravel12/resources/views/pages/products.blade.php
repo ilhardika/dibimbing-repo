@@ -25,7 +25,6 @@
                             <th scope="col" width="45%">Nama Produk</th>
                             <th scope="col" width="25%">Stok</th>
                             <th scope="col" width="25%">Harga</th>
-                            <th scope="col" width="25%">Description</th>
                             <th scope="col" width="25%">Aksi</th>
                         </tr>
                     </thead>
@@ -37,9 +36,11 @@
                             <td>{{ $product->name }}</td>
                             <td>{{ $product->stock }}</td>
                             <td>Rp.{{ number_format($product->price, 0, ',', '.') }}</td>
-                            <td>{{ Str::limit($product->description, 10, '...') }}</td>
                             <td>
                                 <div class="d-flex gap-2">
+                                    <a href="/product/{{ $product->product_id }}" class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-eye"></i>
+                                    </a>
                                     <a href="#" class="btn btn-sm btn-outline-warning">
                                         <i class="bi bi-pencil"></i>
                                     </a>

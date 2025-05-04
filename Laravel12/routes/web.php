@@ -23,12 +23,13 @@ Route::get('/', function () {
 Route::get('about', [AboutController::class,'index']);
 
 // PRODUCT
-Route::get('products', [ProductController::class,'index']);
-Route::post('products', [ProductController::class,'store']);
-Route::get('products/create', [ProductController::class,'createProduct']);
+Route::get('products', [ProductController::class,'index']); // menampilkan semua produk
+Route::post('products', [ProductController::class,'store']); // mengelola data yang telah dikirim dari form
+Route::get('products/create', [ProductController::class,'createProduct']); // menampilkan form tambah produk
+Route::get('product/{id}', [ProductController::class,'detailProduct']); // menampilkan form tambah produk
 
 
-// PRODUCT DETAIL
-Route::get('product/{id}', function($id) {
-    return view('pages.productDetail', ['id' => $id]);
-});
+// // PRODUCT DETAIL
+// Route::get('product/{id}', function($id) {
+//     return view('pages.productDetail', ['id' => $id]);
+// });

@@ -44,4 +44,12 @@ class ProductController extends Controller
     public function createProduct(){
         return view('layouts.modalCreateProduct');
     }
+
+    public function detailProduct($id){
+        // query untuk mengambil data dari database pakai eloquent
+        $detailProduct = Product::findOrFail($id);
+        // dd($detailProduct);
+
+        return view('pages.productDetail', ['product' => $detailProduct]);
+    }
 }
