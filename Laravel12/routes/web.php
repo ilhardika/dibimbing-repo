@@ -27,9 +27,3 @@ Route::get('products', [ProductController::class,'index']); // menampilkan semua
 Route::post('products', [ProductController::class,'store']); // mengelola data yang telah dikirim dari form
 Route::get('products/create', [ProductController::class,'createProduct']); // menampilkan form tambah produk
 Route::get('product/{id}', [ProductController::class,'detailProduct']); // menampilkan form tambah produk
-
-
-// // PRODUCT DETAIL
-// Route::get('product/{id}', function($id) {
-//     return view('pages.productDetail', ['id' => $id]);
-// });
