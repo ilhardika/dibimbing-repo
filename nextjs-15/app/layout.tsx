@@ -32,17 +32,27 @@ export default function RootLayout({
           <ul className="flex space-x-4">
             <li>
               <Link href="/" className="text-white hover:underline">
-          Home
+                Home
               </Link>
             </li>
             <li>
               <Link href="/about" className="text-white hover:underline">
-          About
+                About
               </Link>
             </li>
             <li>
               <Link href="/about/me" className="text-white hover:underline">
-          About Me
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link href="/user" className="text-white hover:underline">
+                User
+              </Link>
+            </li>
+            <li>
+              <Link href="/admin" className="text-white hover:underline">
+                Admin
               </Link>
             </li>
           </ul>
